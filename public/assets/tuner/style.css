@@ -1,0 +1,19 @@
+/*
+Theme Name: Kiddy
+Theme URI: http://kiddy.creaws.com/
+Author: Creative Web Solutions
+Author URI: http://themeforest.net/user/creativews
+Description: Kiddy is a powerful children WordPress theme suitable for a wide variety of children-oriented websites. Its playful and colorful design, complete with "flat" graphics and copious white space, out-stands this theme from others and makes it applicable for kindergartens, pre-schools, schools, child care and may other businesses! 
+Version: 1.0.0
+License: GNU General Public License version 3.0 & Envato Regular/Extended License
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html & http://themeforest.net/licenses
+Tags: pre-school, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: kiddy
+Template: kiddy
+
+*/ 
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+@import url("tuner/css/colorpicker.css");
+@import url("tuner/css/styles.css");
