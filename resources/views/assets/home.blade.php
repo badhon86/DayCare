@@ -222,11 +222,12 @@
                 <div class='ce clearfix'>
                     <div>
                         <h3 class="ce_title">A Few Words About <span >Our Center</span></h3>
-                        <p>Libero commodo, ornare mi id, egestas metus. Vivamus condimentum elit vel vestibulum feugiat Aliquam semper nunc augue, vitae fringilla felis adipiscing ac. Duis convallis nibh at euismod molestie.</p>
+                        <p>We try to be joyfull to your baby and try to make them joyfull. Our tutors are also very good in behave.
+                            They always try to do best for our center and your baby.</p>
                         <ul class="checkmarks_style">
-                            <li>Aenean tincidunt laoreet odio at vulputate, sed pretium lorem sed nulla pulvinar gravida</li>
-                            <li>Suspendisse in risus a odio porta commodo felis, in condimentum, risus eget venenatis</li>
-                            <li>Praesent at sem vitae lacus iaculis aliquam eget, ivamus justo odio, dictum fermentum sapien</li>
+                            <li>We are ready to serve you.</li>
+                            <li>Your baby our responsibility.</li>
+                            <li>Our day care center is exceptional from others.</li>
                         </ul>
                         <a href='{{asset('/about')}}' class='cws_button small'>More About Us</a>
                     </div>
@@ -278,7 +279,7 @@
                             <div class='cws_fa_tbl_row'>
                                 <div class='cws_fa_tbl_cell'></div>
                                 <div class='cws_fa_tbl_cell'>
-                                    <p>Mi id egestas metus neus, vivamus condimentum elit</div>
+                                    <p>Play nurtures children's creativity and problem solving capabilities.Play provides the context in which caring adults teach children how to behave, how to treat others, and the social conventions of the community. Play provides the opportunity to learn essential social skills: to take turns, to share and to cooperate.</div>
                             </div>
                         </div>
                     </div>
@@ -296,7 +297,7 @@
                             <div class='cws_fa_tbl_row'>
                                 <div class='cws_fa_tbl_cell'></div>
                                 <div class='cws_fa_tbl_cell'>
-                                    <p>Congue ullamcorper scale, curabitur ultricies lacus</div>
+                                    <p>More than preparation for primary school. It aims at the holistic development of a child's social, emotional, cognitive and physical needs in order to build a solid and broad foundation for lifelong learning and wellbeing.</div>
                             </div>
                         </div>
                     </div>
@@ -316,7 +317,7 @@
                             <div class='cws_fa_tbl_row'>
                                 <div class='cws_fa_tbl_cell'></div>
                                 <div class='cws_fa_tbl_cell'>
-                                    <p>Nec facilisis at, mattis nec est, morbi eget velit justo congue</div>
+                                    <p>More than just a chance to have fun, play is serious business when it comes to a child's health and development. From peek-a-boo to pat-a-cake and hide-and-seek to hopscotch, the many forms of play enrich a child's brain, body, and life in important ways.</div>
                             </div>
                         </div>
                     </div>
@@ -334,7 +335,7 @@
                             <div class='cws_fa_tbl_row'>
                                 <div class='cws_fa_tbl_cell'></div>
                                 <div class='cws_fa_tbl_cell'>
-                                    <p>Cget phasellus id justo adipiscing scale curabitur</div>
+                                    <p>Educational toys can help develop problem solving skills, teach about conflict resolution and how cause and effect work. It also teaches children about sharing, helps develop their fine and gross motor skills and nurtures their creativity and imagination.</div>
                             </div>
                         </div>
                     </div>
@@ -354,7 +355,7 @@
                             <div class='cws_fa_tbl_row'>
                                 <div class='cws_fa_tbl_cell'></div>
                                 <div class='cws_fa_tbl_cell'>
-                                    <p>Elit ve vestibulum feugiat, aliquam semper nunc xaugue</div>
+                                    <p>Children have pure minds, which can imitate things easily, be it good or bad. If we fill the children’s mind with good things and good behaviours, surely they will grow to become ideal person. Showing aggressive behaviour to control them makes them more cruel.</div>
                             </div>
                         </div>
                     </div>
@@ -372,7 +373,7 @@
                             <div class='cws_fa_tbl_row'>
                                 <div class='cws_fa_tbl_cell'></div>
                                 <div class='cws_fa_tbl_cell'>
-                                    <p>Congue uhasellus id scale justo adipiscin gultricies</div>
+                                    <p>For young children physical activity means the opportunity to move around and play with other children. Children tend to be more active when they are outdoors rather than when they are indoors. While they do seem to be engage in various physical activities indoors as well, they are mostly light-intensity activities.</div>
                             </div>
                         </div>
                     </div>
@@ -470,7 +471,7 @@
                                 <div class="bees bees-end"><span></span></div>STILL NOT CONVINCED?</div>
                             <div class='separate'></div>
                             <div class='callout_text'>
-                                <p>Want to get more information about our learning center or would like to see it inside, feel free to schedule&nbsp;a tour.
+                                <p>Want to get more information about our DAyCARe center or would like to see it inside, feel free to schedule&nbsp;a tour.
                                     <br /> Come visit us today!</p>
                             </div>
                         <!-- </div>
