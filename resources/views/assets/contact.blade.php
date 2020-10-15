@@ -24,7 +24,7 @@
                         <h3 class="ce_title">How To Find Us</h3>
                         <div class="map-border">
                             <div class="google-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25295.930156304785!2d16.371063311644324!3d48.208404844730474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07986fcad78b%3A0x73f5a4d267cc4174!2zTmFnbGVyZ2Fzc2UgMTAsIDEwMTAgV2llbiwg0JDQstGB0YLRgNC40Y8!5e0!3m2!1sru!2sua!4v1453294615596" width="1170" height="450" allowfullscreen></iframe>
+                                <iframe src="google.com/maps/place/CSE+Building,+Daffodil+International+University/@23.7549233,90.3741778,682m/data=!3m2!1e3!4b1!4m5!3m4!1s0x3755b8ada2664e21:0x3c872fd17bc11ddb!8m2!3d23.7549184!4d90.3763665?hl=en-US" width="1170" height="450" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                                 <div class='cws_fa_tbl_row'>
                                     <div class='cws_fa_tbl_cell'></div>
                                     <div class='cws_fa_tbl_cell'>
-                                        <p>Biscayne Blvd. (North) 11st Floor New World Tower Miami, Florida 33148
+                                        <p>4/2, Daffodil Tower, Sobhanbag, Mirpur Rd, Dhaka 1207
                                             <br />
                                     </div>
                                 </div>
@@ -59,12 +59,12 @@
                                         <div class='cws_fa_wrapper'><i class='cws_fa fa fa-1x fa-clock-o'></i><span class='ring'></span></div>
                                     </div>
                                     <div class='cws_fa_tbl_cell'>
-                                        <h2>Monday &#8211; Friday</h2></div>
+                                        <h2>Sunday &#8211; Thursday</h2></div>
                                 </div>
                                 <div class='cws_fa_tbl_row'>
                                     <div class='cws_fa_tbl_cell'></div>
                                     <div class='cws_fa_tbl_cell'>
-                                        <p>8:00AM &#8211; 5:00PM
+                                        <p>5:45AM &#8211; 6:00PM
                                             <br />
                                     </div>
                                 </div>
@@ -80,9 +80,9 @@
                                 <div class='cws_fa_tbl_row'>
                                     <div class='cws_fa_tbl_cell'></div>
                                     <div class='cws_fa_tbl_cell'>
-                                        <p><a href="tel:1-800-123-45678"> 1-800-123-45678</a>
+                                        <p><a href="tel:1-800-123-45678"> +880 1722222222</a>
                                             <br />
-                                            <a href="tel:1-800-123-45679"> 1-800-123-45679</a>
+                                            <a href="tel:1-800-123-45679"> +880 1738444444</a>
                                             <br />
                                     </div>
                                 </div>
@@ -98,10 +98,10 @@
                                 <div class='cws_fa_tbl_row'>
                                     <div class='cws_fa_tbl_cell'></div>
                                     <div class='cws_fa_tbl_cell'>
-                                        <p><a href="mailto:mail@mail.com"> mail@mail.com</a>
+                                        <p><a href="mailto:badhonsarkar518@gmail.com">badhonsarkar518@gmail.com</a>
                                             <br />
-                                            <a href="http://www.creaws.com/"> www.creaws.com</a>
-                                            <br />
+                                            {{-- <a href="http://www.creaws.com/"> www.creaws.com</a>
+                                            <br /> --}}
                                     </div>
                                 </div>
                             </div>
@@ -127,10 +127,6 @@
                                         <br />
                                         <span class="cf-form-control-wrap your-message"><textarea name="message" cols="107" rows="8" class="cf-form-control cf-textarea" aria-invalid="false"></textarea></span> </p>
                                     <p>
-                                        <span class="captcha-wrapper">
-                                            <iframe src="php/capcha.html" class="capcha-frame" name="capcha_image_frame"></iframe>
-                                            <input class="verify" type="text" id="verify" name="verify" />
-                                        </span>
                                         <input type="submit" value="Send" class="cf-form-control cf-submit" />
                                     </p>
                                     <div class="cws_msg_box error-box clearfix">
