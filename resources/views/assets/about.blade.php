@@ -8,12 +8,12 @@
     <div class='container'>
         <div class='title'>
             <h1>About Us</h1></div>
-        <nav class="bread-crumbs"><a href="index.html" >Home</a><i class="delimiter fa fa-chevron-right"></i><span class="current">About Us</span></nav>
+        <nav class="bread-crumbs"><a href="{{asset('/')}}" >Home</a><i class="delimiter fa fa-chevron-right"></i><span class="current">About Us</span></nav>
         <!-- .breadcrumbs -->
     </div>
     <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
 </section>
-
+<p>
 
 <!-- / breadcrumbs -->
 <!-- main container -->
@@ -28,8 +28,19 @@
                     <div class='ce clearfix'>
                         <h3 class="ce_title">Who We Are</h3>
                         <div>
-                            <p><img class="size-medium image-type alignleft" src="assets/pic/2015/03/our_team_2-300x300.jpg" width="150" height="150" alt="our_team_2" />Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam dapibus accumsan enim, ac pulvinar lacus. Maecenas iaculis vulputate enim viverra vulputate. Duis pharetra purus sit amet libero auctor, sit amet interdum metus tincidunt. Nunc fermentum tincidunt odio non feugiat. Phasellus eget risus enim.</p>
-                            <p>Fusce vel nulla auctor, fringilla nibh pretium, convallis felis. Vivamus consequat ligula et est semper rutrum. Vestibulum luctus elit gravida tempor mollis. Maecenas scelerisque enim non magna molestie, sit amet laoreet metus suscipit. Nullam eget auctor est. Donec metus ipsum, sodales quis elit vitae, vulputate laoreet diam. Integer consequat eleifend libero, ac consectetur tellus luctus in.</p>
+                            <img class="size-medium image-type alignleft" src="assets/pic/2015/03/our_team_2-300x300.jpg" width="150" height="150" alt="our_team_2" />I am Mis. Nourin Islam. i am the OWNER of the DAyCARe Center. <div class='social_links'>
+                                <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
+                                <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
+                                <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
+                            </div>
+<p>
+
+                            <p>We are ready to serve you. Your baby our responsibility. Our day care center is exceptional from others. In this society people are very hard working. Some cases both of parents work outside of home. As a result their child fell lonely and grow up without proper
+                                care.We are here for them.We thik about you, aslo think about your child. Our center will take care of them as like you. Trust us we will not dissapointed you
+                                We try to be joyfull to your baby and try to make them joyfull. Our tutors are also very good in behave.They always try to do best for our center and your baby.
+                                Our packages are designed very well based on yours comfort. And we serve the best meal amoung all. Our security is very tight. Dont worry about your child. We will give him the most comfort jone here.
+                                Try to ensure well education and healthy food for every child in our center. Our all tutor are well trained and educated, so they can be good
+                                friend and a good teacher for your child. Our packages are also design as your need hope you will be satisfied with us.</p>
                             <p>&nbsp;</p>
                         </div>
                     </div>
@@ -40,28 +51,36 @@
                         <h3 class="ce_title">What We Do</h3>
                         <div class='cws_ce_content ce_accordion'>
                             <div class='accordion_section active'>
-                                <div class='accordion_title'><i class='accordion_icon'></i><span>Sed ac nibh id lectus tincidunt vulputate ullamcorper in dui.</span></div>
+                                <div class='accordion_title'><i class='accordion_icon'></i><span>What ages of children do you accept?</span></div>
                                 <div class='accordion_content'>
-                                    <p>Pellentesque eget odio a tortor dignissim laoreet sed ac erat. Aenean egestas ultrices turpis, et egestas lectus rhoncus vel. Curabitur mattis nibh in turpis imperdiet rutrum. Pellentesque elementum urna malesuada, dignissim massa vel, mollis leo.</p>
+                                    <p>Our Center provides a Loving and safe, nurturing, and educational environment for children 1 year to 8 years of age.</p>
                                 </div>
                             </div>
                             <div class='accordion_section'>
-                                <div class='accordion_title'><i class='accordion_icon'></i><span>Donec non dolor ultricies, consequat sapien a, ultrices est.</span></div>
+                                <div class='accordion_title'><i class='accordion_icon'></i><span>What are your hours of operation?</span></div>
                                 <div class='accordion_content' style='display:none;'>
-                                    <p>Curabitur mattis nibh in turpis imperdiet rutrum. Pellentesque elementum urna malesuada, dignissim massa vel, mollis leo. Ut purus nisl, hendrerit eu aliquam vitae, elementum ut arcu. Ut sit amet mattis mi. Vestibulum vel aliquet sapien.</p>
+                                    <p>We are open Sunday through Thursday from 5:45 am to 6:00 pm. We provide full-day care for thme. We also provide before-and-after-school care for children who are enrolled in Kindergarten through 8 years of age.</p>
                                 </div>
                             </div>
                             <div class='accordion_section'>
-                                <div class='accordion_title'><i class='accordion_icon'></i><span>In et pretium sem. Integer gravida enim a lacus.</span></div>
-                                <div class='accordion_content' style='display:none;'>Curabitur mattis nibh in turpis imperdiet rutrum. Pellentesque elementum urna malesuada, dignissim massa vel, mollis leo. Ut purus nisl, hendrerit eu aliquam vitae, elementum ut arcu. Ut sit amet mattis mi.</div>
+                                <div class='accordion_title'><i class='accordion_icon'></i><span>Do you provide meals and snacks?</span></div>
+                                <div class='accordion_content' style='display:none;'>Yes! We serve hot meals and nutritious snacks. Our Center is equipped with a kitchen and staff trained in nutrition, USDA and Kansas Department of Education guidelines, and proper portions for young children.</div>
                             </div>
                             <div class='accordion_section'>
-                                <div class='accordion_title'><i class='accordion_icon'></i><span>Cras vitae vehicula lectus, eu aliquet leo. Sed congue ornare.</span></div>
-                                <div class='accordion_content' style='display:none;'>Ut purus nisl, hendrerit eu aliquam vitae, elementum ut arcu. Ut sit amet mattis mi. Vestibulum vel aliquet sapien. Quisque tempor elementum diam at imperdiet. Suspendisse malesuada pretium orci sed posuere.</div>
+                                <div class='accordion_title'><i class='accordion_icon'></i><span>What do I need to bring with me to sign-up for Day care?</span></div>
+                                <div class='accordion_content' style='display:none;'>The registration process will require the following: Proof of income/source of income, Health and Immunization form, Immunization Record for all children being enrolled, and Authorization for Emergency Medical Care. If your child requires medication, you will also need the Authorization for Dispensing Medication form.</div>
                             </div>
                             <div class='accordion_section'>
-                                <div class='accordion_title'><i class='accordion_icon'></i><span>Etiam varius, sapien quis aliquet pulvinar.</span></div>
-                                <div class='accordion_content' style='display:none;'>Curabitur mattis nibh in turpis imperdiet rutrum. Pellentesque elementum urna malesuada, dignissim massa vel, mollis leo. Ut purus nisl, hendrerit eu aliquam vitae, elementum ut arcu. Ut sit amet mattis mi.</div>
+                                <div class='accordion_title'><i class='accordion_icon'></i><span>How long does it take to enroll my children at the Center?</span></div>
+                                <div class='accordion_content' style='display:none;'>The registration process usually takes between one to two hours. There are many forms required for the registration of your child(ren). We like to answer as many questions as possible during your enrollment and provide information on our safety procedures and other important items which are applicable at the time of registration.</div>
+                            </div>
+                            <div class='accordion_section'>
+                                <div class='accordion_title'><i class='accordion_icon'></i><span>How secure is your monitoring system?</span></div>
+                                <div class='accordion_content' style='display:none;'> Our center has implemented stringent security measures to protect against unauthorized access to the room cameras. All of our web cam systems use encryption to protect usernames and passwords.</div>
+                            </div>
+                            <div class='accordion_section'>
+                                <div class='accordion_title'><i class='accordion_icon'></i><span>Will my child be supervised at all times?</span></div>
+                                <div class='accordion_content' style='display:none;'>Yes! A member of our Care Team will be supervising your child at all times - even during quiet or nap time. our center also adheres to Infant Safe Sleep guidelines and has implemented other policies for older children to have the safest possible environment while in our care.</div>
                             </div>
                         </div>
                     </div>
@@ -70,69 +89,15 @@
             </div>
             <!-- / content section -->
             <!-- text section -->
-            <div class='grid_row clearfix'>
-                <div class='grid_col grid_col_12'>
-                    <div class='ce clearfix'>
-                        <h3 class="ce_title" style="text-align: center;">Services and Capabilities</h3>
-                        <div>
-                            <p style="text-align: center;">Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dolor lectus, consectetur ut condimentum at, lobortis et sapien. Donec eu cursus ligula. Phasellus augue quam, eleifend vitae velit ac, pharetra blandit velit. Vivamus convallis magna at sodales mollis. Integer eu leo quis justo dapibus aliquet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- / text section -->
-            <!-- content section -->
-            <div class='grid_row clearfix'>
-                <div class='grid_col grid_col_3'>
-                    <div class='ce clearfix'>
-                        <div>
-                            <p style="text-align: center;"><span class='cws_fa_wrapper'><i class='cws_fa fa fa-4x fa-flask'></i><span class='ring'></span></span>
-                                <p style="text-align: center;"><strong>Flat Design</strong>
-                                    <br /> Clean design, inspired by iOS 8.
-                                    <br /> Complete with &#8220;flat&#8221; graphics.</p>
-                                    <p style="text-align: center;"><a href="#" class="cws_button mini">More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class='grid_col grid_col_3'>
-                    <div class='ce clearfix'>
-                        <div>
-                            <p style="text-align: center;"><span class='cws_fa_wrapper'><i class='cws_fa fa fa-4x fa-magic'></i><span class='ring'></span></span>
-                                <p style="text-align: center;"><strong>Extensive Style Options</strong>
-                                    <br />Create YOUR OWN color scheme within a few seconds using built!</p>
-                                    <p style="text-align: center;"><a href="#" class="cws_button mini">More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class='grid_col grid_col_3'>
-                    <div class='ce clearfix'>
-                        <div>
-                            <p style="text-align: center;"><span class='cws_fa_wrapper'><i class='cws_fa fa fa-4x fa-trophy'></i><span class='ring'></span></span>
-                                <p style="text-align: center;"><strong>Parallax Sections</strong>
-                                <br />The theme includes Parallax Effect sections which make the website.</p>
-                                <p style="text-align: center;"><a href="#" class="cws_button mini">More</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class='grid_col grid_col_3'>
-                    <div class='ce clearfix'>
-                        <div>
-                            <p style="text-align: center;"><span class='cws_fa_wrapper'><i class='cws_fa fa fa-4x fa-cog'></i><span class='ring'></span></span>
-                                <p style="text-align: center;"><strong>Retina Ready</strong>
-                                    <br />This product provides responsive and flexible layout. HiDPI images.</p>
-                                    <p style="text-align: center;"><a href="#" class="cws_button mini">More</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- / content section -->
             <!-- text section -->
             <div class='grid_row clearfix'>
                 <div class='grid_col grid_col_12'>
                     <div class='ce clearfix'>
-                        <h3 class="ce_title" style="text-align: center;">Our Team Of Experts</h3>
+                        <h3 class="ce_title" style="text-align: center;">Our Employees</h3>
                         <div>
-                            <p style="text-align: center;">Donec convallis a velit nec ultricies. Vestibulum elementum neque vitae orci vehicula, ac varius mi fringilla. Nullam molestie lectus vitae lorem aliquet, quis rutrum quam blandit. Nunc arcu mi, blandit ac nisl ut, lacinia dignissim massa. Nulla ultricies in quam id sagittis. Nunc arcu nisi, tempormi.</p>
+                            <p style="text-align: center;">Our tutor are very friendly,they care a lot of your child.we look over everyones movement alltime.Our day care center have a good friendly environment,it is very comfort to stay for your child</p>
                         </div>
                     </div>
                 </div>
@@ -155,8 +120,7 @@
                                                         <div class='link-item-bounce'></div>
                                                     </div>
                                                     <div class='link'>
-                                                        <a href='page-profile.html'><i class='fa fa-share'></i></a>
-                                                        <div class='link-item-bounce'></div>
+
                                                     </div>
                                                 </div>
                                                 <div class='link-toggle-button'>
@@ -166,8 +130,8 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'><a href='page-profile.html'>Linda</a></h3>
-                                        <div class='positions'><a href='page-our-team.html'>Nannies</a></div>
+                                        <h3 class='title'>Liza Banu</h3>
+                                        <div class='positions'><a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
@@ -191,8 +155,8 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'>Mary</h3>
-                                        <div class='positions'><a href='page-our-team.html'>Babysitters</a>, <a href='page-our-team.html'>Nannies</a></div>
+                                        <h3 class='title'>Moriom Aktar</h3>
+                                        <div class='positions'><a href='#'>Babysitter</a>, <a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
@@ -206,18 +170,18 @@
                             <article class='item'>
                                 <div class='ourteam_item_wrapper'>
                                     <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-16148467-304vr7mc6b8fxqpow50bnu.jpg' data-at2x='assets/pic/bfi_thumb/248x248-16148467-304vr7mc6b8fxqpow50bnu@2x.jpg' alt />
+                                        <div class='pic'><img src='assets/pic/bfi_thumb/Nutri.jpg' data-at2x='assets/pic/bfi_thumb/Nutri.jpg' alt />
                                             <div class='hover-effect'></div>
                                             <div class='links_popup'>
                                                 <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/16148467.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
+                                                    <div class='link'><a href='assets/pic/2015/04/Nutri.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'>Alice</h3>
-                                        <div class='positions'><a href='page-our-team.html'>Maternity nurses</a></div>
+                                        <h3 class='title'>Farzana Ahmed</h3>
+                                        <div class='positions'><a href='#'>Nutritionist</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
@@ -241,8 +205,8 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'>Anne</h3>
-                                        <div class='positions'><a href='page-our-team.html'>Nannies</a></div>
+                                        <h3 class='title'>Kulsuma Khatun</h3>
+                                        <div class='positions'><a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
@@ -266,8 +230,8 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'>Kath</h3>
-                                        <div class='positions'><a href='page-our-team.html'>Babysitters</a></div>
+                                        <h3 class='title'>Ferdousy Ahmed</h3>
+                                        <div class='positions'><a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
@@ -291,8 +255,8 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'>Jane</h3>
-                                        <div class='positions'><a href='page-our-team.html'>Nannies</a></div>
+                                        <h3 class='title'>Effat Tamanna</h3>
+                                        <div class='positions'><a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
@@ -316,8 +280,8 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'>Melinda</h3>
-                                        <div class='positions'><a href='page-our-team.html'>Maternity nurses</a></div>
+                                        <h3 class='title'>Nahid Afros</h3>
+                                        <div class='positions'><a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
@@ -350,8 +314,8 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'><a href='#'>Natalie</a></h3>
-                                        <div class='positions'><a href='page-our-team.html'>Maternity nurses</a></div>
+                                        <h3 class='title'><a href='#'>Israt Jahan</a></h3>
+                                        <div class='positions'><a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
                                         <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>

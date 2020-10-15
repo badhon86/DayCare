@@ -212,7 +212,7 @@
                                             </a>
                                             <div class='post_title'><a href='blog-post.html'>Hedaitul Islam</a></div>
                                             <div class='post_content'><a href='hedaitul35-2156@diu.edu.bd'>hedaitul35-2156@diu.edu.bd</a></div>
-                                            <div class='post_date'>Designer,Developer</div>
+                                            <div class='post_date'>Developer</div>
                                         </div>
                                     </div>
                                     <!-- / post item -->
@@ -225,7 +225,7 @@
                                             </a>
                                             <div class='post_title'><a href='#'>Mehedi Hasan</a></div>
                                             <div class='post_content'><a href='mehedi35-2134@diu.edu.bd'>mehedi35-2134@diu.edu.bd</a></div>
-                                            <div class='post_date'>Designer,Developer</div>
+                                            <div class='post_date'>Developer</div>
                                         </div>
                                     </div>
                                 </div>
@@ -350,7 +350,7 @@
                 <!-- / canvas -->
                 <div class='container'>
                     <div class='copyrights_container'>
-                        <div class='copyrights'><a target="_blank">DAyCARe_TEAM</a></div>
+                        <div class='copyrights'><a target="_blank">All Rights Reserves to-DAyCARe_TEAM  </a></div>
                         <div class='copyrights_panel'>
                             <div class='copyrights_panel_wrapper'>
 
