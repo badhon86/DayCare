@@ -314,7 +314,7 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'><a href='#'>Israt Jahan</a></h3>
+                                        <h3 class='title'><a href='#'>Nourn Islam</a></h3>
                                         <div class='positions'><a href='#'>Nanny</a></div>
                                     </div>
                                     <div class='social_links'>
