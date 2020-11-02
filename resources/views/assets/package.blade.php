@@ -101,7 +101,7 @@
         </div>
         <!-- / divider -->
         <!-- teem carousel -->
-        <div class='grid_row clearfix'>
+        {{-- <div class='grid_row clearfix'>
             <section class='cws_ourteam'>
                 <!-- carousel header -->
                 <div class='cws_ourteam_header'>
@@ -277,7 +277,7 @@
                 </div>
                 <!-- / carousel container -->
             </section>
-        </div>
+        </div> --}}
         <!-- / teem carousel -->
         <!-- testimonials carousel -->
         <div class='grid_row clearfix'>
@@ -346,7 +346,7 @@
         </div>
         <!-- / testimonial carousel -->
         <!-- recent articles carousel -->
-        <div class='grid_row clearfix'>
+        {{-- <div class='grid_row clearfix'>
             <section class='news news-pinterest'>
                 <!-- carousel header -->
                 <div class='cws_blog_header'>
@@ -448,7 +448,7 @@
                 <!-- / carousel items -->
             </section>
         </div>
-        <!-- head of prising table -->
+        <!-- head of prising table --> --}}
         <div class='grid_row clearfix' style='padding-bottom: 0px;'>
             <div class='grid_col grid_col_12'>
                 <div class='ce clearfix'>
