@@ -8,8 +8,8 @@
 <section class='page_title wave'>
     <div class='container'>
         <div class='title'>
-            <h1>contact</h1></div>
-        <nav class="bread-crumbs"><a href="index.html">Home</a><i class="delimiter fa fa-chevron-right"></i><span class="current">Right Sidebar</span></nav>
+            <h1>monitor your kid</h1></div>
+        <nav class="bread-crumbs"><a href="index.html">Home</a><i class="delimiter fa fa-chevron-right"></i><span class="current">monitor</span></nav>
         <!-- .breadcrumbs -->
     </div>
     <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
@@ -259,7 +259,7 @@
                                                             <div class="link-item-bounce"></div>
                                                         </div>
                                                         <div class="link">
-                                                            <a href="blog-post.html"><i class="fa fa-share"></i></a>
+                                                            <a href="#"><i class="fa fa-share"></i></a>
                                                             <div class="link-item-bounce"></div>
                                                         </div>
                                                     </div>
@@ -291,212 +291,7 @@
                                 </article>
                                 <!-- / blog item -->
                                 <!-- blog item -->
-                                <article class='item small'>
-                                    <div class='post_header_def_post'>
-                                        <div class="date">
-                                            <div class='date-cont'><span class='day'>23</span><span class='month' title='March'><span>Mar</span></span><span class='year'>2015</span><i class='springs'></i></div>
-                                        </div>
-                                        <div class="post_info_header">
-                                            <h3 class="ce_title"><a href="blog-post.html">Gallery post</a></h3> </div>
-                                    </div>
-                                    <div class='media_info_wrapper'>
-                                        <div class="media_part">
-                                            <a class='carousel_nav prev'>
-                                                <span></span>
-                                            </a>
-                                            <a class='carousel_nav next'>
-                                                <span></span>
-                                            </a>
-                                            <div class='gallery_post_carousel'>
-                                                <div class='pic'>
-                                                    <img src='assets/pic/bfi_thumb/348x195-Full-HD-2-304vqhzkohjdc2p1drl2q2.jpg' data-at2x='assets/pic/bfi_thumb/348x195-Full-HD-2-304vqhzkohjdc2p1drl2q2@2x.jpg' alt />
-                                                    <div class="hover-effect"></div>
-                                                    <div class='links_popup'>
-                                                        <div class='link_cont'>
-                                                            <div class='link'>
-                                                                <a href="assets/pic/2015/03/Full-HD-2.jpg" data-fancybox-group='cws-gallery-564eeb82cf4af' class="fancy fancy_gallery" data-thumbnail='assets/pic/bfi_thumb/Full-HD-2-304vqhzk70mrk1zga05kp6.jpg'><i class="fa fa-camera"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class='pic'>
-                                                    <img src='assets/pic/bfi_thumb/348x195-Full-HD-1-304vqhm05lxszxgf8613wq.jpg' data-at2x='assets/pic/bfi_thumb/348x195-Full-HD-1-304vqhm05lxszxgf8613wq@2x.jpg' alt />
-                                                    <div class="hover-effect"></div>
-                                                    <div class='links_popup'>
-                                                        <div class='link_cont'>
-                                                            <div class='link'>
-                                                                <a href="assets/pic/2015/03/Full-HD-1.jpg" data-fancybox-group='cws-gallery-564eeb82cf4af' class="fancy fancy_gallery" data-thumbnail='assets/pic/bfi_thumb/Full-HD-1-304vqhlzo5177wqu4ellvu.jpg'><i class="fa fa-camera"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class='pic'>
-                                                    <img src='assets/pic/bfi_thumb/348x195-Full-HD-3-304vqid57d4xo7xnjd51je.jpg' data-at2x='assets/pic/bfi_thumb/348x195-Full-HD-3-304vqid57d4xo7xnjd51je@2x.jpg' alt />
-                                                    <div class="hover-effect"></div>
-                                                    <div class='links_popup'>
-                                                        <div class='link_cont'>
-                                                            <div class='link'>
-                                                                <a href="assets/pic/2015/03/Full-HD-3.jpg" data-fancybox-group='cws-gallery-564eeb82cf4af' class="fancy fancy_gallery" data-thumbnail='assets/pic/bfi_thumb/Full-HD-3-304vqid4pw8bw782flpjii.jpg'><i class="fa fa-camera"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='post_content_wrap'>
-                                        <div class='post_content'>
-                                            <p>Aenean molestie faucibus fringilla.Quisque in nulla ut metus cursus commodo non vitae nibh. Curabitur euismod sem vel velit blandit, sit amet molestie sapien pulvinar. Nam at justo eget nulla dictum vehicula. Nulla ac mi adipiscing, elementum ligula at, ultrices mauris. Nullam nec tortor mauris. Quisque sollicitudin metus quis tempor congue. Mauris sit amet tincidunt purus, id eleifend orci. </p>
-                                            <p>Maecenas vel elit at dui condimentum lobortis in sed eros. Morbi iaculis euismod felis in pulvinar. Praesent sagittis elementum velit nec dictum. Donec bibendum varius ipsum, ac pretium metus vehicula eu. Suspendisse vestibulum velit non ornare elementum. Mauris ultrices posuere diam sit amet consectetur. Quisque eget elit quis sapien interdum mattis. Aenean commodo pharetra mauris a fermentum. Sed mattis sit amet risus a feugiat. <a href="blog-post.html" class="more-link">[&#8230;]</a></p>
-                                        </div>
-                                        <div class='meta_cont_wrapper'>
-                                            <div class='meta_cont'>
-                                                <div class="post_info">
-                                                    <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">Standart</a><span class="v_sep"></span><a href="#" rel="category tag">Uncategorized</a></div>
-                                                </div>
-                                                <div class='button_cont'><a href='blog-post.html' class='cws_button small'>Read More</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='separator-box'>
-                                        <canvas class='separator' width='1170' data-line-color='#f9e8b2'></canvas>
-                                    </div>
-                                </article>
-                                <!-- / blog item -->
-                                <!-- blog item -->
-                                <article class='item small'>
-                                    <div class='post_header_def_post'>
-                                        <div class="date">
-                                            <div class='date-cont'><span class='day'>27</span><span class='month' title='February'><span>Feb</span></span><span class='year'>2015</span><i class='springs'></i></div>
-                                        </div>
-                                        <div class="post_info_header">
-                                            <h3 class="ce_title"><a href="blog-post.html">Video post</a></h3> </div>
-                                    </div>
-                                    <div class='media_info_wrapper'>
-                                        <div class="media_part video_post">
-                                            <div class='video'>
-                                                <div class='cws_oembed_wrapper'>
-                                                    <iframe width="348" height="196" src="https://www.youtube.com/embed/KaOEQJGig9c?feature=oembed" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='post_content_wrap'>
-                                        <div class='post_content'>
-                                            <p>Quisque in nulla ut metus cursus commodo non vitae nibh. Curabitur euismod sem vel velit blandit, sit amet molestie sapien pulvinar. Aenean molestie faucibus fringilla. Nam at justo eget nulla dictum vehicula. Nulla ac mi adipiscing, elementum ligula at, ultrices mauris. Nullam nec tortor mauris. Quisque sollicitudin metus quis tempor congue. </p>
-                                            <p>Mauris sit amet tincidunt purus, id eleifend orci. Maecenas vel elit at dui condimentum lobortis in sed eros. Morbi iaculis euismod felis in pulvinar. Praesent sagittis elementum velit nec dictum. Donec bibendum varius ipsum, ac pretium metus vehicula eu. Suspendisse vestibulum velit non ornare elementum. Mauris ultrices posuere diam sit amet consectetur. Quisque eget elit quis sapien interdum mattis. Aenean commodo pharetra mauris a fermentum. Sed mattis sit amet risus a feugiat. <a href="blog-post.html" class="more-link">[&#8230;]</a></p>
-                                        </div>
-                                        <div class='meta_cont_wrapper'>
-                                            <div class='meta_cont'>
-                                                <div class="post_info">
-                                                    <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">Standart</a><span class="v_sep"></span><a href="#" rel="category tag">Uncategorized</a></div>
-                                                </div>
-                                                <div class='button_cont'><a href='blog-post.html' class='cws_button small'>Read More</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='separator-box'>
-                                        <canvas class='separator' width='1170' data-line-color='#f9e8b2'></canvas>
-                                    </div>
-                                </article>
-                                <!-- / blog item -->
-                                <!-- blog item -->
-                                <article class='item small'>
-                                    <div class='post_content_wrap'>
-                                        <div class='media_info_wrapper'>
-                                            <div class="media_part only_link">
-                                                <div class='link'><a href='http://cwsthemes.com/'>http://cwsthemes.com</a></div>
-                                            </div>
-                                        </div>
-                                        <div class='post_content'>
-                                            <p>Quisque in nulla ut metus cursus commodo non vitae nibh. Curabitur euismod sem vel velit blandit, sit amet molestie sapien pulvinar. Aenean molestie faucibus fringilla. Nam at justo eget nulla dictum vehicula. Nulla ac mi adipiscing, elementum ligula at, ultrices mauris. Nullam nec tortor mauris. Quisque sollicitudin metus quis tempor congue. Mauris sit amet tincidunt purus, id eleifend orci. Maecenas vel elit at dui condimentum lobortis in sed eros. Morbi iaculis euismod felis in pulvinar. Praesent sagittis elementum velit nec dictum.</p>
-                                            <p>Donec bibendum varius ipsum, ac pretium metus vehicula eu. Suspendisse vestibulum velit non ornare elementum. Mauris ultrices posuere diam sit amet consectetur. Quisque eget elit quis sapien interdum mattis. Aenean commodo pharetra mauris a fermentum. Sed mattis sit amet risus a feugiat. <a href="blog-post.html" class="more-link">[&#8230;]</a></p>
-                                        </div>
-                                        <div class='meta_cont_wrapper'>
-                                            <div class='meta_cont'>
-                                                <div class="post_info">
-                                                    <div class='info'><i class='fa fa-chain'></i> link</div>
-                                                    <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">Standart</a><span class="v_sep"></span><a href="#" rel="category tag">Uncategorized</a></div>
-                                                </div>
-                                                <div class='button_cont'><a href='blog-post.html' class='cws_button small'>Read More</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='separator-box'>
-                                        <canvas class='separator' width='1170' data-line-color='#f9e8b2'></canvas>
-                                    </div>
-                                </article>
-                                <!-- / blog item -->
-                                <!-- blog item -->
-                                <article class='item small'>
-                                    <div class='post_header_def_post'>
-                                        <div class="date">
-                                            <div class='date-cont'><span class='day'>22</span><span class='month' title='February'><span>Feb</span></span><span class='year'>2015</span><i class='springs'></i></div>
-                                        </div>
-                                        <div class="post_info_header">
-                                            <h3 class="ce_title"><a href="blog-post.html">Audio post</a></h3> </div>
-                                    </div>
-                                    <div class='media_info_wrapper'>
-                                        <div class="media_part audio_post">
-                                            <div class='pic'><img src='assets/pic/bfi_thumb/348x195-kid_headpnones-304vqn516he3a2as6a5yiy.jpg' data-at2x='assets/pic/bfi_thumb/348x195-kid_headpnones-304vqn516he3a2as6a5yiy@2x.jpg' alt /></div>
-                                            <div class='audio'>
-                                                <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
-                                                <audio class="audio-shortcode" id="audio-1793-1" preload="none" controls="controls">
-                                                    <source type="audio/mpeg" src="http://html.cwsthemes.com/wp-content/uploads/2015/04/Show-Me-A-Dinosaur-Drawing-The-Line.mp3?_=1" /><a href="http://html.cwsthemes.com/wp-content/uploads/2015/04/Show-Me-A-Dinosaur-Drawing-The-Line.mp3">/wp-content/uploads/2015/04/Show-Me-A-Dinosaur-Drawing-The-Line.mp3</a></audio>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='post_content_wrap'>
-                                        <div class='post_content'>
-                                            <p>Quisque in nulla ut metus cursus commodo non vitae nibh. Curabitur euismod sem vel velit blandit, sit amet molestie sapien pulvinar. Aenean molestie faucibus fringilla. Nam at justo eget nulla dictum vehicula. Nulla ac mi adipiscing, elementum ligula at, ultrices mauris. Nullam nec tortor mauris. </p>
-                                            <p>Quisque sollicitudin metus quis tempor congue. Mauris sit amet tincidunt purus, id eleifend orci. Maecenas vel elit at dui condimentum lobortis in sed eros. Morbi iaculis euismod felis in pulvinar. Praesent sagittis elementum velit nec dictum. Donec bibendum varius ipsum, ac pretium metus vehicula eu. Suspendisse vestibulum velit non ornare elementum. Mauris ultrices posuere diam sit amet consectetur. Quisque eget elit quis sapien interdum mattis. Aenean commodo pharetra mauris a fermentum. Sed mattis sit amet risus a feugiat. <a href="blog-post.html" class="more-link">[&#8230;]</a></p>
-                                        </div>
-                                        <div class='meta_cont_wrapper'>
-                                            <div class='meta_cont'>
-                                                <div class="post_info">
-                                                    <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">Standart</a><span class="v_sep"></span><a href="#" rel="category tag">Uncategorized</a></div>
-                                                </div>
-                                                <div class='button_cont'><a href='blog-post.html' class='cws_button small'>Read More</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='separator-box'>
-                                        <canvas class='separator' width='1170' data-line-color='#f9e8b2'></canvas>
-                                    </div>
-                                </article>
-                                <!-- / blog item -->
-                                <!-- blog item -->
-                                <article class='item small'>
-                                    <div class='media_info_wrapper'>
-                                        <div class="media_part quoute_post">
-                                            <div class="testimonial clearfix without_image">
-                                                <div class='quote'>Art is the only serious thing in the world. And the artist is the only person who is never serious.</div>
-                                                <figure class='author'>
-                                                    <div class='dott'><span>.</span><span>.</span><span>.</span></div>
-                                                    <figcaption>Oscar Wilde</figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='post_content_wrap'>
-                                        <div class='post_content'>
-                                            <p>Quisque in nulla ut metus cursus commodo non vitae nibh. Curabitur euismod sem vel velit blandit, sit amet molestie sapien pulvinar. Aenean molestie faucibus fringilla. </p>
-                                            <p>Nam at justo eget nulla dictum vehicula. Nulla ac mi adipiscing, elementum ligula at, ultrices mauris. Nullam nec tortor mauris. Quisque sollicitudin metus quis tempor congue. Mauris sit amet tincidunt purus, id eleifend orci. Maecenas vel elit at dui condimentum lobortis in sed eros. Morbi iaculis euismod felis in pulvinar. Praesent sagittis elementum velit nec dictum. Donec bibendum varius ipsum, ac pretium metus vehicula eu. Suspendisse vestibulum velit non ornare elementum. Mauris ultrices posuere diam sit amet consectetur. Quisque eget elit quis sapien interdum mattis. Aenean commodo pharetra mauris a fermentum. Sed mattis sit amet risus a feugiat. <a href="blog-post.html" class="more-link">[&#8230;]</a></p>
-                                        </div>
-                                        <div class='meta_cont_wrapper'>
-                                            <div class='meta_cont'>
-                                                <div class="post_info">
-                                                    <div class='info'><i class='fa fa-quote-left'></i> quote</div>
-                                                    <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">Standart</a><span class="v_sep"></span><a href="#" rel="category tag">Uncategorized</a></div>
-                                                </div>
-                                                <div class='button_cont'><a href='blog-post.html' class='cws_button small'>Read More</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='separator-box'>
-                                        <canvas class='separator' width='1170' data-line-color='#f9e8b2'></canvas>
-                                    </div>
-                                </article>
+
                                 <!-- / blog item -->
                             </div>
                             <!-- pagination -->

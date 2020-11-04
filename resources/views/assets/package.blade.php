@@ -465,12 +465,12 @@
             <div class='grid_col grid_col_4 pricing_table_column'>
                 <div>
                     <div class='top_section'>
-                        <div class='title_section'>Babysitting</div>
+                        <div class='title_section'>Daily Package</div>
                         <div class='encouragement'>Daily booking fee</div>
                         <div class='separate'></div>
                         <div class='price_section'>
-                            <div class='price_container'><span class='currency'>$</span>
-                                <div class='vova-test'></div><span class='main_price_part'>21</span><span class='price_details'><span class='price_description'><span>/day</span></span>
+                            <div class='price_container'><span class='currency'>৳</span>
+                                <div class='vova-test'></div><span class='main_price_part'>799</span><span class='price_details'><span class='price_description'><span>/day</span></span>
                                 </span>
                             </div>
                         </div>
@@ -494,12 +494,12 @@
             <div class='grid_col grid_col_4 pricing_table_column'>
                 <div>
                     <div class='top_section'>
-                        <div class='title_section'>Nanny</div>
+                        <div class='title_section'>Weekly Package</div>
                         <div class='encouragement'>Fee payable upon successful placement</div>
                         <div class='separate'></div>
                         <div class='price_section'>
-                            <div class='price_container'><span class='currency'>$</span>
-                                <div class='vova-test'></div><span class='main_price_part'>23</span><span class='price_details'><span class='price_description'><span>/day</span></span>
+                            <div class='price_container'><span class='currency'>৳</span>
+                                <div class='vova-test'></div><span class='main_price_part'>3500</span><span class='price_details'><span class='price_description'><span>/week</span></span>
                                 </span>
                             </div>
                         </div>
@@ -523,12 +523,12 @@
             <div class='grid_col grid_col_4 pricing_table_column'>
                 <div>
                     <div class='top_section'>
-                        <div class='title_section'>Maternity Nurses</div>
+                        <div class='title_section'>Monthly Package</div>
                         <div class='encouragement'>Daily agency fee</div>
                         <div class='separate'></div>
                         <div class='price_section'>
-                            <div class='price_container'><span class='currency'>$</span>
-                                <div class='vova-test'></div><span class='main_price_part'>25</span><span class='price_details'><span class='price_description'><span>/day</span></span>
+                            <div class='price_container'><span class='currency'>৳</span>
+                                <div class='vova-test'></div><span class='main_price_part'>11000</span><span class='price_details'><span class='price_description'><span>/month</span></span>
                                 </span>
                             </div>
                         </div>
@@ -561,7 +561,7 @@
                             <div class='separate'></div>
                             <div class='callout_text'>
                                 <p style="text-align: center;">If you need a babysitter or a nanny in less than 7 hours, please call us at 111-222-3333.
-                                    <br /> Our office hours are Mon-Fri, 8am-5pm.</p>
+                                    <br /> Our office hours are Sun-Thu, 5:45am-6pm.</p>
                             </div>
                         </div>
                         <div class='button_section'><a href='#' class='cws_button xlarge'>Request a Sitter Now<div class='button-shadow'></div></a></div>
