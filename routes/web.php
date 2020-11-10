@@ -27,6 +27,16 @@ Route::get('/monitor', [
     'as'   => '/monitor'
 ]);
 
+Route::get('/userlogin', [
+    'uses' => 'UserloginController@index',
+    'as'   => '/userlogin'
+]);
+
+Route::get('/userregi', [
+    'uses' => 'UserregiController@index',
+    'as'   => '/userregi'
+]);
+
 Route::get('/gallery', [
     'uses' => 'GalleryController@index',
     'as'   => '/gallery'

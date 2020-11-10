@@ -24,7 +24,8 @@
         <div class='container'>
             <!-- sidebar -->
             <aside class='sb_right'>
-                <div class="cws-widget">
+                <br/>
+                {{-- <div class="cws-widget">
                     <form method="get" class="search-form" action="#">
                         <label>
                             <span class="screen-reader-text">Search for:</span>
@@ -33,7 +34,7 @@
                         <input type="submit" class="search-submit" value="Search" />
                         <input type='hidden' name='lang' value='en' />
                     </form>
-                </div>
+                </div> --}}
                 <div class="cws-widget">
                     <div class="widget-title">Recent Posts</div>
                     <!-- / post item -->

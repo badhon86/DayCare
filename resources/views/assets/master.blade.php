@@ -129,7 +129,7 @@
                                         </li>
                                         <!-- / menu item -->
                                         <!-- menu item -->
-                                        <li class="menu-item menu-item-has-children right"><a href="{{asset('/monitor')}}">Monitor<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <li class="menu-item menu-item-has-children right"><a href="{{asset('/userlogin')}}">Monitor<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
 
                                         </li>
                                         <!-- / menu item -->
