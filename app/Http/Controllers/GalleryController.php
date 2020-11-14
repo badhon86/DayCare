@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class GalleryController extends Controller
 {
     /**
@@ -13,7 +13,9 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        return view ('assets.gallery');
+        $gsData = DB::table('gallery')->get();
+        return view ('assets.gallery', compact('gsData'));
+    //    return view ('assets.gallery');
     }
 
     /**

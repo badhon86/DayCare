@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class ContactController extends Controller
 {
     /**
@@ -34,7 +34,17 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd("dddd");
+        $data = $this->validate($request,[
+
+            'name' => 'required',
+            'email' => 'required',
+            'message' => 'required'
+        ]);
+        if (Message::insert($data)) {
+            return 'OK';
+        }
+        return 'no';
     }
 
     /**
@@ -43,7 +53,7 @@ class ContactController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Message $message)
     {
         //
     }
@@ -54,7 +64,7 @@ class ContactController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Message $message)
     {
         //
     }
@@ -66,7 +76,7 @@ class ContactController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Message $message)
     {
         //
     }
@@ -77,7 +87,7 @@ class ContactController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Message $message)
     {
         //
     }

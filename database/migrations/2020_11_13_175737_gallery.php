@@ -14,11 +14,11 @@ class Gallery extends Migration
     public function up()
     {
         Schema::create('gallery', function (Blueprint $table) {
-            
+
             $table->timestamps();
-			$table->string('imgID')->nullable();
-			$table->string('img')->nullable();
-			
+			$table->bigIncrements('id');
+			$table->string('image')->nullable();
+
         });
     }
 

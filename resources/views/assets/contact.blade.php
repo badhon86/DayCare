@@ -116,8 +116,8 @@
                         <div>
                             <div role="form" class="cf" id="cf-f16-p10-o1" lang="en-US" dir="ltr">
                                 <div class="screen-reader-response"></div>
-                                <form action="http://html.cwsthemes.com/kiddy/php/contacts-process.php" method="post" class="cf-form contact-form" novalidate="novalidate">
-                                    <p>Name*
+                            <form action="{{route('/contact')}}" method="post" class="cf-form contact-form" novalidate="novalidate">
+                             @csrf <p>Name*
                                         <br />
                                         <span class="cf-form-control-wrap your-name"><input type="text" name="name" value="" size="107" class="cf-form-control cf-text cf-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
                                     <p>Email*
@@ -129,15 +129,15 @@
                                     <p>
                                         <input type="submit" value="Send" class="cf-form-control cf-submit" />
                                     </p>
-                                    <div class="cws_msg_box error-box clearfix">
+                                    {{-- <div class="cws_msg_box error-box clearfix">
                                         <div class="icon_section"><i class="fa fa-exclamation"></i></div>
                                         <div class="content_section">
                                             <div class="msg_box_title">Error box</div>
                                             <div class="msg_box_text"></div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </form>
-                                <div class="email_server_responce"></div>
+
                             </div>
                         </div>
                     </div>

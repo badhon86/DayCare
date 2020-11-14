@@ -12,7 +12,8 @@
         "crocodicstudio/crudbooster": "6.0-beta.1",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.18.35",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^3.1"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
