@@ -32,8 +32,8 @@
                     <div>
                         <p style="text-align: center;"><img class="aligncenter size-full image-type noborder" src="assets/pic/2015/09/babysitting.png" alt="babysitting" width="150" height="150" /></p>
                         <h2 class="ce_title heading" style="text-align: center;">Babysitting</h2>
-                        <p style="text-align: center;">Mid egestas metus neus, vivamus condimentum. Eget lacinia eleifend luctus facilisis venenatis.</p>
-                        <p style="text-align: center;"><a href='#' class='cws_button mini'>More</a>
+                        <p style="text-align: center;">Babysitters take charge of planning and overseeing activities for children. They often play games inside and take children outdoors to keep them active and engaged while parents are away from home. Supervise homework.</p>
+                        {{-- <p style="text-align: center;"><a href='#' class='cws_button mini'>More</a> --}}
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@
                     <div>
                         <p style="text-align: center;"><img class="aligncenter size-full image-type noborder" src="assets/pic/2015/09/nanny_service.png" alt="nanny_service" width="150" height="150" /></p>
                         <h2 class="ce_title heading" style="text-align: center;">Nanny service</h2>
-                        <p style="text-align: center;">Nec facilisis at, mattis nec est, morbi eget velit et justo vulputate congue raesent.</p>
-                        <p style="text-align: center;"><a href='#' class='cws_button mini'>More</a>
+                        <p style="text-align: center;">A nanny is a person who provides child care. Typically, this care is given within the children's family setting. Throughout history, nannies were usually servants in large households and reported directly to the lady of the house.</p>
+                        {{-- <p style="text-align: center;"><a href='#' class='cws_button mini'>More</a> --}}
                     </div>
                 </div>
             </div>
@@ -55,9 +55,9 @@
                 <div class='ce clearfix'>
                     <div>
                         <p style="text-align: center;"><img class="aligncenter size-full image-type noborder" src="assets/pic/2015/09/maternity_service.png" alt="maternity_service" width="150" height="150" /></p>
-                        <h2 class="ce_title heading" style="text-align: center;">Maternity service</h2>
-                        <p style="text-align: center;">Elit ve vestibulum feugiat, aliquam semper praesent lacus iaculis nunc.</p>
-                        <p style="text-align: center;"><a href='#' class='cws_button mini'>More</a>
+                        <h2 class="ce_title heading" style="text-align: center;">Nutritionist service</h2>
+                        <p style="text-align: center;">For childcare centres that provide food, this service will ensure that the food and nutrition elements of the NQS are being met.</p>
+                        {{-- <p style="text-align: center;"><a href='#' class='cws_button mini'>More</a> --}}
                     </div>
                 </div>
             </div>
@@ -69,13 +69,13 @@
             <div class='grid_col grid_col_6'>
                 <div class='ce clearfix'>
                     <div>
-                        <h3 class="ce_title" style=" text-align: center;">Five easy steps for finding <span >your Nanny</span></h3>
+                        <h3 class="ce_title" style=" text-align: center;">Five couses that you should choose our  <span >DAyCARe</span></h3>
                         <ul class="checkmarks_style">
-                            <li>Aenean tincidunt laoreet odio vulputate</li>
-                            <li>Suspendisse in risus a odio </li>
-                            <li>Praesent at sem vitae lacus iaculis</li>
-                            <li>Etiam mi sapien, luctus ac tempor</li>
-                            <li>Tristique egestas eget sed nisi</li>
+                            <li>coming soon</li>
+                            <li>coming soon</li>
+                            <li>coming soon</li>
+                            <li>coming soon</li>
+                            <li>coming soon</li>
                         </ul>
                     </div>
                 </div>
@@ -296,7 +296,7 @@
                                     <!-- testimonial item -->
                                     <li>
                                         <div class="testimonial clearfix">
-                                            <div class='quote'>Ut tincidunt nisl sapien, eget gravida quam vestibulum vitae. Ut ultrices purus quis tincidunt rutrum. Integer volutpat pretium tellus venenatis</div>
+                                            <div class='quote'>coming soon</div>
                                             <figure class='author'>
                                                 <div class='dott'><span>.</span><span>.</span><span>.</span></div><img src='assets/pic/bfi_thumb/64x64-16148467-304vr7mbviwufsmtnwrbpm.jpg' data-at2x='assets/pic/bfi_thumb/64x64-16148467-304vr7mbviwufsmtnwrbpm@2x.jpg' alt />
                                                 <figcaption>Alice Doe</figcaption>
@@ -307,7 +307,7 @@
                                     <!-- testimonial item -->
                                     <li>
                                         <div class="testimonial clearfix">
-                                            <div class='quote'>Duis quis arcu ut odio suscipit semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed justo a leo.</div>
+                                            <div class='quote'>coming soon</div>
                                             <figure class='author'>
                                                 <div class='dott'><span>.</span><span>.</span><span>.</span></div><img src='assets/pic/bfi_thumb/64x64-our_team_2-304vqoe94rd18dffqdh05m.jpg' data-at2x='assets/pic/bfi_thumb/64x64-our_team_2-304vqoe94rd18dffqdh05m@2x.jpg' alt />
                                                 <figcaption>Jane Doe</figcaption>
@@ -318,7 +318,7 @@
                                     <!-- testimonial item -->
                                     <li>
                                         <div class="testimonial clearfix">
-                                            <div class='quote'>Ut tincidunt nisl sapien, eget gravida quam vestibulum vitae. Ut ultrices purus quis tincidunt rutrum. Integer volutpat pretium tellus venenatis</div>
+                                            <div class='quote'>coming soon</div>
                                             <figure class='author'>
                                                 <div class='dott'><span>.</span><span>.</span><span>.</span></div><img src='assets/pic/bfi_thumb/64x64-16148467-304vr7mbviwufsmtnwrbpm.jpg' data-at2x='assets/pic/bfi_thumb/64x64-16148467-304vr7mbviwufsmtnwrbpm@2x.jpg' alt />
                                                 <figcaption>Alice Doe</figcaption>
@@ -329,7 +329,7 @@
                                     <!-- testimonial item -->
                                     <li>
                                         <div class="testimonial clearfix">
-                                            <div class='quote'>Duis quis arcu ut odio suscipit semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed justo a leo.</div>
+                                            <div class='quote'>coming soon</div>
                                             <figure class='author'>
                                                 <div class='dott'><span>.</span><span>.</span><span>.</span></div><img src='assets/pic/bfi_thumb/64x64-our_team_2-304vqoe94rd18dffqdh05m.jpg' data-at2x='assets/pic/bfi_thumb/64x64-our_team_2-304vqoe94rd18dffqdh05m@2x.jpg' alt />
                                                 <figcaption>Jane Doe</figcaption>
@@ -466,7 +466,7 @@
                 <div>
                     <div class='top_section'>
                         <div class='title_section'>Daily Package</div>
-                        <div class='encouragement'>Daily booking fee</div>
+                        <div class='encouragement'>coming soon</div>
                         <div class='separate'></div>
                         <div class='price_section'>
                             <div class='price_container'><span class='currency'>৳</span>
@@ -478,11 +478,11 @@
                     <div class='desc_section'>
                         <ul class="listing">
                             <li><i class="fa fa-usd"></i>&nbsp;Hourly rate</li>
-                            <li><i class="fa fa-book"></i>&nbsp;All police vetted</li>
-                            <li><i class="fa fa-clock-o"></i>&nbsp;Last minute babysitters</li>
-                            <li><i class="fa fa-money"></i>&nbsp;Pay the sitter directly</li>
+                            <li><i class="fa fa-book"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-clock-o"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-money"></i>&nbsp;coming soon</li>
                         </ul>
-                        <p style="text-align: center;">Aliquam euismod erat libero, eu condimentum nisl hendrerit vel.</p>
+                        <p style="text-align: center;">coming soon</p>
                     </div>
                 </div>
                 <div>
@@ -495,7 +495,7 @@
                 <div>
                     <div class='top_section'>
                         <div class='title_section'>Weekly Package</div>
-                        <div class='encouragement'>Fee payable upon successful placement</div>
+                        <div class='encouragement'>coming soon</div>
                         <div class='separate'></div>
                         <div class='price_section'>
                             <div class='price_container'><span class='currency'>৳</span>
@@ -506,12 +506,12 @@
                     </div>
                     <div class='desc_section'>
                         <ul class="listing">
-                            <li><i class="fa fa-users"></i>&nbsp;Temp and permanent</li>
-                            <li><i class="fa fa-home"></i>&nbsp;Live-in and overnight</li>
-                            <li><i class="fa fa-usd"></i>&nbsp;Payroll help</li>
-                            <li><i class="fa fa-pencil"></i>&nbsp;Help with contracts</li>
+                            <li><i class="fa fa-users"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-home"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-usd"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-pencil"></i>&nbsp;coming soon</li>
                         </ul>
-                        <p style="text-align: center;">Ut sit amet congue lectus. Aliquam euismod erat libero, eu condimentum nisl.</p>
+                        <p style="text-align: center;">coming soon</p>
                     </div>
                 </div>
                 <div>
@@ -524,7 +524,7 @@
                 <div>
                     <div class='top_section'>
                         <div class='title_section'>Monthly Package</div>
-                        <div class='encouragement'>Daily agency fee</div>
+                        <div class='encouragement'>coming soon</div>
                         <div class='separate'></div>
                         <div class='price_section'>
                             <div class='price_container'><span class='currency'>৳</span>
@@ -537,10 +537,10 @@
                         <ul class="listing">
                             <li><i class="fa fa-hourglass-start"></i>&nbsp;Short term assignments</li>
                             <li><i class="fa fa-clock-o"></i>&nbsp;Long term bookings</li>
-                            <li><i class="fa fa-child"></i>&nbsp;Overnight care</li>
-                            <li><i class="fa fa-thumbs-o-up"></i>&nbsp;Trained maternity nurses</li>
+                            <li><i class="fa fa-child"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-thumbs-o-up"></i>&nbsp;coming soon</li>
                         </ul>
-                        <p style="text-align: center;">Vestibulum vitae nisl quis elit tristique egestas eget sed nisi. Etiam mi sapien, luctus.</p>
+                        <p style="text-align: center;">coming soon</p>
                     </div>
                 </div>
                 <div>

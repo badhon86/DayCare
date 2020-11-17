@@ -325,7 +325,7 @@
                             <div class="textwidget">
                                 <div role="form" class="cf" id="cf-f1705-o1" lang="en-US" dir="ltr">
                                     <!-- <div class="screen-reader-response"></div> -->
-                                    <form action="{{route('/contact')}}" method="post" class="cf-form contact-form" novalidate="novalidate">
+                                    <form action="" method="post" class="cf-form contact-form" novalidate="novalidate">
                                         <p><span class="cf-form-control-wrap your-name"><input type="text" name="name" value="" size="60" class="" aria-required="true" aria-invalid="false" placeholder="Name" /></span></p>
                                         <p><span class="cf-form-control-wrap your-email"><input type="email" name="email" value="" size="60" class="" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></p>
                                         <p><span class="cf-form-control-wrap your-message"><textarea name="message" cols="39" rows="6" class="" aria-invalid="false" placeholder="Message"></textarea></span></p>

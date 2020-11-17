@@ -116,8 +116,8 @@
                         <div>
                             <div role="form" class="cf" id="cf-f16-p10-o1" lang="en-US" dir="ltr">
                                 <div class="screen-reader-response"></div>
-                            <form action="{{route('/contact')}}" method="post" class="cf-form contact-form" novalidate="novalidate">
-                             @csrf <p>Name*
+                            <form action="" method="post" class="cf-form contact-form" novalidate="novalidate">
+                             <p>Name*
                                         <br />
                                         <span class="cf-form-control-wrap your-name"><input type="text" name="name" value="" size="107" class="cf-form-control cf-text cf-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
                                     <p>Email*
