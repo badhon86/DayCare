@@ -273,9 +273,9 @@
                                     </div>
                                     <div class='post_content_wrap'>
                                         <div class='post_content'>
-                                            <p>Quisque in nulla ut metus cursus commodo non vitae nibh. Curabitur euismod sem vel velit blandit, sit amet molestie sapien pulvinar.
-                                                <br /> Aenean molestie faucibus fringilla. Nam at justo eget nulla dictum vehicula. Nulla ac mi adipiscing, elementum ligula at, ultrices mauris. Nullam nec tortor mauris. Quisque sollicitudin metus quis tempor congue.</p>
-                                            <p>Mauris sit amet tincidunt purus, id eleifend orci. Maecenas vel elit at dui condimentum lobortis in sed eros. Morbi iaculis euismod felis in pulvinar. Praesent sagittis elementum velit nec dictum. Donec bibendum varius ipsum, ac pretium metus vehicula eu. Suspendisse vestibulum velit non ornare elementum. Mauris ultrices posuere diam sit amet consectetur. Quisque eget elit quis sapien interdum mattis. Aenean commodo pharetra mauris a fermentum. Sed mattis sit amet risus a feugiat. <a href="blog-post.html#more-1789" class="more-link">[&#8230;]</a></p>
+                                            <p>Cntents coming soon
+                                                <br /> </p>
+                                            <p><a href="blog-post.html#more-1789" class="more-link">[&#8230;]</a></p>
                                         </div>
                                         <div class='meta_cont_wrapper'>
                                             <div class='meta_cont'>
