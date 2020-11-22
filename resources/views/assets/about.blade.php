@@ -107,16 +107,16 @@
             <div class='grid_row clearfix'>
                 <section class='cws_ourteam'>
                     <div class='cws_wrapper'>
-                        <div class='cws_ourteam_items grid grid-4 isotope'>
+                        <div class='cws_ourteam_items grid grid-4 isotope'>@foreach ($gsData as $Data)
                             <!-- team item -->
                             <article class='item'>
                                 <div class='ourteam_item_wrapper'>
                                     <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-21528548-304vr78rnfmvllh2qjgcui.jpg' data-at2x='assets/pic/bfi_thumb/248x248-21528548-304vr78rnfmvllh2qjgcui@2x.jpg' alt />
+                                        <div class='pic'><img src="{{$Data->thumb_image}}" data-at2x="{{$Data->thumb_image}}" alt />
                                             <div class='hover-effect'></div>
                                             <div class='links_popup animate'>
                                                 <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/21528548.jpg' class='fancy'><i class='fa fa-camera'></i></a>
+                                                    <div class='link'><a href="{{$Data->image}}" class='fancy'><i class='fa fa-camera'></i></a>
                                                         <div class='link-item-bounce'></div>
                                                     </div>
                                                     <div class='link'>
@@ -130,202 +130,17 @@
                                         </div>
                                     </div>
                                     <div class='title_wrap'>
-                                        <h3 class='title'>Liza Banu</h3>
-                                        <div class='positions'><a href='#'>Nanny</a></div>
+                                        <h3 class='title'>"{{$Data->name}}"</h3>
+                                        <div class='positions'><a href='#'>"{{$Data->position}}"</a></div>
                                     </div>
                                     <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
+                                        <a href="{{$Data->linkedin}}" class='fa fa-linkedin' title='Linked In' target='_blank'></a>
+                                        <a href="{{$Data->facebook}}" class='fa fa-facebook' title='Facebook' target='_blank'></a>
+                                        <a href="{{$Data->twitter}}" class='fa fa-twitter' title='Twitter' target='_blank'></a>
                                     </div>
                                 </div>
                             </article>
-                            <!-- / team item -->
-                            <!-- team item -->
-                            <article class='item'>
-                                <div class='ourteam_item_wrapper'>
-                                    <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-our_team_7-304vqq12dcm2uy7myv4iyy.jpg' data-at2x='assets/pic/bfi_thumb/248x248-our_team_7-304vqq12dcm2uy7myv4iyy@2x.jpg' alt />
-                                            <div class='hover-effect'></div>
-                                            <div class='links_popup'>
-                                                <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/our_team_7.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='title_wrap'>
-                                        <h3 class='title'>Moriom Aktar</h3>
-                                        <div class='positions'><a href='#'>Babysitter</a>, <a href='#'>Nanny</a></div>
-                                    </div>
-                                    <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- / team item -->
-                            <!-- team item -->
-                            <article class='item'>
-                                <div class='ourteam_item_wrapper'>
-                                    <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/Nutri.jpg' data-at2x='assets/pic/bfi_thumb/Nutri.jpg' alt />
-                                            <div class='hover-effect'></div>
-                                            <div class='links_popup'>
-                                                <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/Nutri.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='title_wrap'>
-                                        <h3 class='title'>Farzana Ahmed</h3>
-                                        <div class='positions'><a href='#'>Nutritionist</a></div>
-                                    </div>
-                                    <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- / team item -->
-                            <!-- team item -->
-                            <article class='item'>
-                                <div class='ourteam_item_wrapper'>
-                                    <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-25371189-304vr7zwp6u09vyb1qkah6.jpg' data-at2x='assets/pic/bfi_thumb/248x248-25371189-304vr7zwp6u09vyb1qkah6@2x.jpg' alt />
-                                            <div class='hover-effect'></div>
-                                            <div class='links_popup'>
-                                                <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/25371189.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='title_wrap'>
-                                        <h3 class='title'>Kulsuma Khatun</h3>
-                                        <div class='positions'><a href='#'>Nanny</a></div>
-                                    </div>
-                                    <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- / team item -->
-                            <!-- team item -->
-                            <article class='item'>
-                                <div class='ourteam_item_wrapper'>
-                                    <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-our_team_4-304vqp9xbley6nqeno0lca.jpg' data-at2x='assets/pic/bfi_thumb/248x248-our_team_4-304vqp9xbley6nqeno0lca@2x.jpg' alt />
-                                            <div class='hover-effect'></div>
-                                            <div class='links_popup'>
-                                                <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/our_team_4.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='title_wrap'>
-                                        <h3 class='title'>Ferdousy Ahmed</h3>
-                                        <div class='positions'><a href='#'>Nanny</a></div>
-                                    </div>
-                                    <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- / team item -->
-                            <!-- team item -->
-                            <article class='item'>
-                                <div class='ourteam_item_wrapper'>
-                                    <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-our_team_5-304vqpnhuh0iisz0t9kk5m.jpg' data-at2x='assets/pic/bfi_thumb/248x248-our_team_5-304vqpnhuh0iisz0t9kk5m@2x.jpg' alt />
-                                            <div class='hover-effect'></div>
-                                            <div class='links_popup'>
-                                                <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/our_team_5.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='title_wrap'>
-                                        <h3 class='title'>Effat Tamanna</h3>
-                                        <div class='positions'><a href='#'>Nanny</a></div>
-                                    </div>
-                                    <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- / team item -->
-                            <!-- team item -->
-                            <article class='item'>
-                                <div class='ourteam_item_wrapper'>
-                                    <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-our_team_3-304vqortyfa72gqx479yx6.jpg' data-at2x='assets/pic/bfi_thumb/248x248-our_team_3-304vqortyfa72gqx479yx6@2x.jpg' alt />
-                                            <div class='hover-effect'></div>
-                                            <div class='links_popup'>
-                                                <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/04/our_team_3.jpg' class='fancy'><i class='fa fa-camera'></i></a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='title_wrap'>
-                                        <h3 class='title'>Nahid Afros</h3>
-                                        <div class='positions'><a href='#'>Nanny</a></div>
-                                    </div>
-                                    <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- / team item -->
-                            <!-- team item -->
-                            <article class='item'>
-                                <div class='ourteam_item_wrapper'>
-                                    <div class='media_part'>
-                                        <div class='pic'><img src='assets/pic/bfi_thumb/248x248-our_team_2-304vqoe9fjomqbiaylq03u.jpg' data-at2x='assets/pic/bfi_thumb/248x248-our_team_2-304vqoe9fjomqbiaylq03u@2x.jpg' alt />
-                                            <div class='hover-effect'></div>
-                                            <div class='links_popup animate'>
-                                                <div class='link_cont'>
-                                                    <div class='link'><a href='assets/pic/2015/03/our_team_2.jpg' class='fancy'><i class='fa fa-camera'></i></a>
-                                                        <div class='link-item-bounce'></div>
-                                                    </div>
-                                                    <div class='link'>
-                                                        <a href='#'><i class='fa fa-share'></i></a>
-                                                        <div class='link-item-bounce'></div>
-                                                    </div>
-                                                </div>
-                                                <div class='link-toggle-button'>
-                                                    <i class='fa fa-plus link-toggle-icon'></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='title_wrap'>
-                                        <h3 class='title'><a href='#'>Nourn Islam</a></h3>
-                                        <div class='positions'><a href='#'>Nanny</a></div>
-                                    </div>
-                                    <div class='social_links'>
-                                        <a href='http://linkedin.com/' class='fa fa-linkedin' title='Linked In' target='_blank'></a>
-                                        <a href='http://facebook.com/' class='fa fa-facebook' title='Facebook' target='_blank'></a>
-                                        <a href='http://twitter.com/' class='fa fa-twitter' title='Twitter' target='_blank'></a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- / team item -->
-                        </div>
+                            @endforeach  </div>
                     </div>
                     <input type='hidden' class='cws_ourteam_ajax_data' value='{"p_id":1904,"mode":"grid","cats":[],"filter":"all","posts_per_page":"10"}' />
                 </section>
