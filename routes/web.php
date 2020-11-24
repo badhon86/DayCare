@@ -27,10 +27,10 @@ Route::get('/monitor', [
     'as'   => '/monitor'
 ]);
 
-Route::get('/userlogin', [
-    'uses' => 'UserloginController@index',
-    'as'   => '/userlogin'
-]);
+// Route::get('/userlogin', [
+//     'uses' => 'UserloginController@index',
+//     'as'   => '/userlogin'
+// ]);
 
 Route::get('/userregi', [
     'uses' => 'UserregiController@index',

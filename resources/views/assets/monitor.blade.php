@@ -273,7 +273,7 @@
                                     </div>
                                     <div class='post_content_wrap'>
                                         <div class='post_content'>
-                                            <p>Cntents coming soon
+                                            <p>Contents coming soon
                                                 <br /> </p>
                                             <p><a href="blog-post.html#more-1789" class="more-link">[&#8230;]</a></p>
                                         </div>
@@ -282,8 +282,11 @@
                                                 <div class="post_info">
                                                     <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">Standart</a><span class="v_sep"></span><a href="#" rel="category tag">Uncategorized</a></div>
                                                 </div>
-                                                <div class='button_cont'><a href='blog-post.html' class='cws_button small'>Read More</a></div>
+                                                <div class='button_cont'><a href='' class='cws_button small'>Read More</a></div>
+
                                             </div>
+                                        <div class='button_cont'><a href='{{asset('/userregi')}}' class='cws_button small'>if you are not a registered user,then click here for registration request</a></div>
+
                                         </div>
                                     </div>
                                     <div class='separator-box'>
