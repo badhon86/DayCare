@@ -129,12 +129,28 @@
                                         </li>
                                         <!-- / menu item -->
                                         <!-- menu item -->
-                                        <li class="menu-item menu-item-has-children right"><a href="{{asset('/monitor')}}">Monitor<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
 
-                                        </li>
                                         <!-- / menu item -->
                                         <!-- menu item -->
-
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="{{asset('/monitor')}}">
+                                                <div class="menu-item right bees-end"><span></span>
+                                                    <div class="line-one"></div>
+                                                    <div class="line-two"></div>
+                                                </div>Monitor
+                                                <div class="canvas_wrapper">
+                                                    <canvas class="menu_dashed"></canvas>
+                                                </div>
+                                            </a>
+                                            <span class='button_open'></span>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                </li>
+                                                <li class="menu-item current-menu-item page_item current_page_item"><a href="http://127.0.0.1:8000/admin/login">login</a></li>
+                                                <li class="menu-item"><a href="{{asset('/userregi')}}">Registration</a></li>
+                                                <!--  -->
+                                            </ul>
+                                        </li>
 
 
                                         <li class="menu-item right bees-end">

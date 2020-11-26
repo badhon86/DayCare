@@ -14,6 +14,126 @@
     <div class='left-pattern pattern pattern-2'></div>
     <!-- / block with pattern -->
     <main>
+        <div class='grid_row clearfix' style='padding-top: 50px;padding-bottom: 50px;'>
+            <div class='grid_col grid_col_12'>
+                <div class='ce clearfix'>
+                    <div class='cws_callout'>
+                        <div class='content_section'>
+                            <div class='callout_title'>
+                                <div class="bees bees-end"><span></span></div>Book A Sitter Here</div>
+                            <div class='separate'></div>
+                            <div class='callout_text'>
+                                <p style="text-align: center;">If you need a babysitter or a nanny in less than 7 hours, please call us at 111-222-3333.
+                                    <br /> Our office hours are Sun-Thu, 5:45am-6pm.</p>
+                            </div>
+                        </div>
+                        {{-- <div class='button_section'><a href='#' class='cws_button xlarge'>Request a Sitter Now<div class='button-shadow'></div></a></div> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='grid_row clearfix' style='padding-bottom: 0px;'>
+            <div class='grid_col grid_col_12'>
+                <div class='ce clearfix'>
+                    <div>
+                        <h3 class="ce_title">Our <span >Pricings</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / head of prising table -->
+        <!-- pricing tables -->
+        <div class='grid_row eq_cols' style='padding-bottom: 50px;'>
+            <!-- pricing table -->
+            <div class='grid_col grid_col_4 pricing_table_column'>
+                <div>
+                    <div class='top_section'>
+                        <div class='title_section'>Daily Package</div>
+                        <div class='encouragement'>coming soon</div>
+                        <div class='separate'></div>
+                        <div class='price_section'>
+                            <div class='price_container'><span class='currency'>৳</span>
+                                <div class='vova-test'></div><span class='main_price_part'>799</span><span class='price_details'><span class='price_description'><span>/day</span></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='desc_section'>
+                        <ul class="listing">
+                            <li><i class="fa fa-usd"></i>&nbsp;Hourly rate</li>
+                            <li><i class="fa fa-book"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-clock-o"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-money"></i>&nbsp;coming soon</li>
+                        </ul>
+                        <p style="text-align: center;">coming soon</p>
+                    </div>
+                </div>
+                <div>
+                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
+                </div>
+            </div>
+            <!-- / pricing table -->
+            <!-- pricing table -->
+            <div class='grid_col grid_col_4 pricing_table_column'>
+                <div>
+                    <div class='top_section'>
+                        <div class='title_section'>Weekly Package</div>
+                        <div class='encouragement'>coming soon</div>
+                        <div class='separate'></div>
+                        <div class='price_section'>
+                            <div class='price_container'><span class='currency'>৳</span>
+                                <div class='vova-test'></div><span class='main_price_part'>3500</span><span class='price_details'><span class='price_description'><span>/week</span></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='desc_section'>
+                        <ul class="listing">
+                            <li><i class="fa fa-users"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-home"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-usd"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-pencil"></i>&nbsp;coming soon</li>
+                        </ul>
+                        <p style="text-align: center;">coming soon</p>
+                    </div>
+                </div>
+                <div>
+                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
+                </div>
+            </div>
+            <!-- / pricing table -->
+            <!-- pricing table -->
+            <div class='grid_col grid_col_4 pricing_table_column'>
+                <div>
+                    <div class='top_section'>
+                        <div class='title_section'>Monthly Package</div>
+                        <div class='encouragement'>coming soon</div>
+                        <div class='separate'></div>
+                        <div class='price_section'>
+                            <div class='price_container'><span class='currency'>৳</span>
+                                <div class='vova-test'></div><span class='main_price_part'>11000</span><span class='price_details'><span class='price_description'><span>/month</span></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='desc_section'>
+                        <ul class="listing">
+                            <li><i class="fa fa-hourglass-start"></i>&nbsp;Short term assignments</li>
+                            <li><i class="fa fa-clock-o"></i>&nbsp;Long term bookings</li>
+                            <li><i class="fa fa-child"></i>&nbsp;coming soon</li>
+                            <li><i class="fa fa-thumbs-o-up"></i>&nbsp;coming soon</li>
+                        </ul>
+                        <p style="text-align: center;">coming soon</p>
+                    </div>
+                </div>
+                <div>
+                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
+                </div>
+            </div>
+            <!-- / pricing table -->
+        </div>
+
         <div class='grid_row clearfix' style='padding-top: 50px;'>
             <div class='grid_col grid_col_12'>
                 <div class='ce clearfix'>
@@ -449,126 +569,10 @@
             </section>
         </div>
         <!-- head of prising table --> --}}
-        <div class='grid_row clearfix' style='padding-bottom: 0px;'>
-            <div class='grid_col grid_col_12'>
-                <div class='ce clearfix'>
-                    <div>
-                        <h3 class="ce_title">Our <span >Pricings</span></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- / head of prising table -->
-        <!-- pricing tables -->
-        <div class='grid_row eq_cols' style='padding-bottom: 50px;'>
-            <!-- pricing table -->
-            <div class='grid_col grid_col_4 pricing_table_column'>
-                <div>
-                    <div class='top_section'>
-                        <div class='title_section'>Daily Package</div>
-                        <div class='encouragement'>coming soon</div>
-                        <div class='separate'></div>
-                        <div class='price_section'>
-                            <div class='price_container'><span class='currency'>৳</span>
-                                <div class='vova-test'></div><span class='main_price_part'>799</span><span class='price_details'><span class='price_description'><span>/day</span></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='desc_section'>
-                        <ul class="listing">
-                            <li><i class="fa fa-usd"></i>&nbsp;Hourly rate</li>
-                            <li><i class="fa fa-book"></i>&nbsp;coming soon</li>
-                            <li><i class="fa fa-clock-o"></i>&nbsp;coming soon</li>
-                            <li><i class="fa fa-money"></i>&nbsp;coming soon</li>
-                        </ul>
-                        <p style="text-align: center;">coming soon</p>
-                    </div>
-                </div>
-                <div>
-                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
-                </div>
-            </div>
-            <!-- / pricing table -->
-            <!-- pricing table -->
-            <div class='grid_col grid_col_4 pricing_table_column'>
-                <div>
-                    <div class='top_section'>
-                        <div class='title_section'>Weekly Package</div>
-                        <div class='encouragement'>coming soon</div>
-                        <div class='separate'></div>
-                        <div class='price_section'>
-                            <div class='price_container'><span class='currency'>৳</span>
-                                <div class='vova-test'></div><span class='main_price_part'>3500</span><span class='price_details'><span class='price_description'><span>/week</span></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='desc_section'>
-                        <ul class="listing">
-                            <li><i class="fa fa-users"></i>&nbsp;coming soon</li>
-                            <li><i class="fa fa-home"></i>&nbsp;coming soon</li>
-                            <li><i class="fa fa-usd"></i>&nbsp;coming soon</li>
-                            <li><i class="fa fa-pencil"></i>&nbsp;coming soon</li>
-                        </ul>
-                        <p style="text-align: center;">coming soon</p>
-                    </div>
-                </div>
-                <div>
-                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
-                </div>
-            </div>
-            <!-- / pricing table -->
-            <!-- pricing table -->
-            <div class='grid_col grid_col_4 pricing_table_column'>
-                <div>
-                    <div class='top_section'>
-                        <div class='title_section'>Monthly Package</div>
-                        <div class='encouragement'>coming soon</div>
-                        <div class='separate'></div>
-                        <div class='price_section'>
-                            <div class='price_container'><span class='currency'>৳</span>
-                                <div class='vova-test'></div><span class='main_price_part'>11000</span><span class='price_details'><span class='price_description'><span>/month</span></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='desc_section'>
-                        <ul class="listing">
-                            <li><i class="fa fa-hourglass-start"></i>&nbsp;Short term assignments</li>
-                            <li><i class="fa fa-clock-o"></i>&nbsp;Long term bookings</li>
-                            <li><i class="fa fa-child"></i>&nbsp;coming soon</li>
-                            <li><i class="fa fa-thumbs-o-up"></i>&nbsp;coming soon</li>
-                        </ul>
-                        <p style="text-align: center;">coming soon</p>
-                    </div>
-                </div>
-                <div>
-                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
-                </div>
-            </div>
-            <!-- / pricing table -->
-        </div>
+
         <!-- / pricing tables -->
         <!-- contact us -->
-        <div class='grid_row clearfix' style='padding-top: 50px;padding-bottom: 50px;'>
-            <div class='grid_col grid_col_12'>
-                <div class='ce clearfix'>
-                    <div class='cws_callout'>
-                        <div class='content_section'>
-                            <div class='callout_title'>
-                                <div class="bees bees-end"><span></span></div>Book A Sitter Here</div>
-                            <div class='separate'></div>
-                            <div class='callout_text'>
-                                <p style="text-align: center;">If you need a babysitter or a nanny in less than 7 hours, please call us at 111-222-3333.
-                                    <br /> Our office hours are Sun-Thu, 5:45am-6pm.</p>
-                            </div>
-                        </div>
-                        <div class='button_section'><a href='#' class='cws_button xlarge'>Request a Sitter Now<div class='button-shadow'></div></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- / contact us -->
     </main>
     <!-- pattern block // -->

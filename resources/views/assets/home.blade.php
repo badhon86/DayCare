@@ -152,6 +152,9 @@
 <div class='cloud_wrapper'>
     <canvas class='cloud' data-bg-color='#f9e8b2' data-line-color='#ffffff' data-pattern-src='img/dots-pattern.png'></canvas>
 </div>
+
+
+
 <!-- / canvas -->
 <div class='container'>
     <!-- benefits container -->
@@ -208,6 +211,34 @@
 <div class="cloud_wrapper">
 <canvas class="white_cloud"></canvas>
 </div>
+
+
+<div class='grid_row clearfix' style='padding-bottom: 50px;'>
+    <div class='grid_col grid_col_12'>
+        <div class='ce clearfix'>
+            <div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / divider -->
+<!-- section -->
+<div class='grid_row clearfix' style='padding-top: 0px;'>
+    <div class='grid_col grid_col_12'>
+        <div class='ce clearfix'>
+            <div>
+                <h3 class="ce_title" style="text-align: center;">We are <span >DAyCARe</span><br /> </h3>
+                <p style="text-align: center;">Game in early childhood is the best foundation for success in school. It develops all necessary learning skills.
+                    <br /> Our activities will challenge and develop
+                     your child’s creativity, imagination, thinking skills, and social skills..</p>
+                <p style="text-align: center;"> <a href='{{asset('/package')}}' class='cws_button customized' data-bg_hover_color='#fec20b' data-bg_color='#3eb2cf' data-text_color='#fff'>Reserve now</a> <a href='{{asset('/about')}}' class='cws_button'>Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- / canvas -->
 <!-- main container -->
 <div id="main" class="site-main">
@@ -382,30 +413,7 @@
         </div>
         <!-- / section -->
         <!-- divider -->
-        <div class='grid_row clearfix' style='padding-bottom: 50px;'>
-            <div class='grid_col grid_col_12'>
-                <div class='ce clearfix'>
-                    <div>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- / divider -->
-        <!-- section -->
-        <div class='grid_row clearfix' style='padding-top: 0px;'>
-            <div class='grid_col grid_col_12'>
-                <div class='ce clearfix'>
-                    <div>
-                        <h3 class="ce_title" style="text-align: center;">We are <span >DAyCARe</span><br /> </h3>
-                        <p style="text-align: center;">Game in early childhood is the best foundation for success in school. It develops all necessary learning skills.
-                            <br /> Our activities will challenge and develop
-                             your child’s creativity, imagination, thinking skills, and social skills..</p>
-                        <p style="text-align: center;"> <a href='{{asset('/package')}}' class='cws_button customized' data-bg_hover_color='#fec20b' data-bg_color='#3eb2cf' data-text_color='#fff'>Reserve now</a> <a href='{{asset('/about')}}' class='cws_button'>Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- / section -->
         <!-- section gallery -->
         <div class='grid_row clearfix'>
