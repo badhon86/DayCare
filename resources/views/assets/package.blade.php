@@ -44,7 +44,7 @@
         </div>
         <!-- / head of prising table -->
         <!-- pricing tables -->
-        <div class='grid_row eq_cols' style='padding-bottom: 50px;'>
+        <div class='grid_row eq_cols' style='padding-bottom: 50px;'>@foreach ($gsData as $Data)
             <!-- pricing table -->
             <div class='grid_col grid_col_4 pricing_table_column'>
                 <div>
@@ -54,7 +54,7 @@
                         <div class='separate'></div>
                         <div class='price_section'>
                             <div class='price_container'><span class='currency'>৳</span>
-                                <div class='vova-test'></div><span class='main_price_part'>799</span><span class='price_details'><span class='price_description'><span>/day</span></span>
+                                <div class='vova-test'></div><span class='main_price_part'>{{$Data->d_price}}</span><span class='price_details'><span class='price_description'><span>/day</span></span>
                                 </span>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
+                    <div class='btn_section'><a class='cws_button' href='http://127.0.0.1:8000/admin/reservation/add?ref=djdBiSg'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
                 </div>
             </div>
             <!-- / pricing table -->
@@ -83,7 +83,7 @@
                         <div class='separate'></div>
                         <div class='price_section'>
                             <div class='price_container'><span class='currency'>৳</span>
-                                <div class='vova-test'></div><span class='main_price_part'>3500</span><span class='price_details'><span class='price_description'><span>/week</span></span>
+                                <div class='vova-test'></div><span class='main_price_part'>{{$Data->w_price}}</span><span class='price_details'><span class='price_description'><span>/week</span></span>
                                 </span>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
+                    <div class='btn_section'><a class='cws_button' href='http://127.0.0.1:8000/admin/reservation/add?ref=djdBiSg'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
                 </div>
             </div>
             <!-- / pricing table -->
@@ -112,7 +112,7 @@
                         <div class='separate'></div>
                         <div class='price_section'>
                             <div class='price_container'><span class='currency'>৳</span>
-                                <div class='vova-test'></div><span class='main_price_part'>11000</span><span class='price_details'><span class='price_description'><span>/month</span></span>
+                                <div class='vova-test'></div><span class='main_price_part'>{{$Data->m_price}}</span><span class='price_details'><span class='price_description'><span>/month</span></span>
                                 </span>
                             </div>
                         </div>
@@ -128,9 +128,9 @@
                     </div>
                 </div>
                 <div>
-                    <div class='btn_section'><a class='cws_button' href='#'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
+                    <div class='btn_section'><a class='cws_button' href='http://127.0.0.1:8000/admin/reservation/add?ref=djdBiSg'>Order Now<div class='hover-btn'></div><div class='button-shadow'></div></a></div>
                 </div>
-            </div>
+            </div>@endforeach
             <!-- / pricing table -->
         </div>
 

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class PackageController extends Controller
@@ -13,7 +13,9 @@ class PackageController extends Controller
      */
     public function index()
     {
-        return view ('assets.package');
+        $gsData = DB::table('price')->get();
+        return view ('assets.package', compact('gsData'));
+        //return view ('assets.package');
     }
 
     /**

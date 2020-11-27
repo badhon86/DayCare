@@ -15,7 +15,7 @@ class AdminBabyController extends CBController {
 		$this->addDatetime("Updated At","updated_at")->required(false)->showAdd(false)->showEdit(false);
 		$this->addText("Baby Name","baby_name")->showEdit(false)->strLimit(150)->maxLength(255);
 		$this->addImage("Birth Certificate","birth_certificate")->showEdit(false)->encrypt(true);
-		$this->addCheckbox("Gender","gender")->options(['male'=>'male','female'=>'female'])->showEdit(false);
+		$this->addRadio("Gender","gender")->options(['male'=>'male','female'=>'female'])->showEdit(false);
 		$this->addText("Father","father")->showEdit(false)->strLimit(150)->maxLength(255);
 		$this->addText("Mother","mother")->showEdit(false)->strLimit(150)->maxLength(255);
 		$this->addEmail("Email","email");

@@ -13,9 +13,9 @@ class AdminContactsController extends CBController {
 
         $this->addDatetime("Created At","created_at")->required(false)->showAdd(false)->showEdit(false);
 		$this->addDatetime("Updated At","updated_at")->required(false)->showAdd(false)->showEdit(false);
-		$this->addText("Name","name")->showEdit(false)->strLimit(150)->maxLength(255);
+		$this->addText("Name","name")->showIndex(false)->showEdit(false)->strLimit(150)->maxLength(255);
 		$this->addEmail("Email","email")->showEdit(false);
-		$this->addTextArea("Text","text")->showEdit(false)->strLimit(150);
+		$this->addTextArea("Text","text")->showIndex(false)->showEdit(false)->strLimit(150);
 		
 
     }
