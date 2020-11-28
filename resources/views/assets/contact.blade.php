@@ -17,19 +17,9 @@
         <div class='left-pattern pattern pattern-2'></div>
         <!-- main content -->
         <main>
+<br>
             <!-- map -->
-            <div class='grid_row clearfix' style='padding-top: 0px;padding-bottom: 0px;'>
-                <div class='grid_col grid_col_12'>
-                    <div class='ce clearfix'>
-                        <h3 class="ce_title">How To Find Us</h3>
-                        <div class="map-border">
-                            <div class="google-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25295.930156304785!2d16.371063311644324!3d48.208404844730474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07986fcad78b%3A0x73f5a4d267cc4174!2zTmFnbGVyZ2Fzc2UgMTAsIDEwMTAgV2llbiwg0JDQstGB0YLRgNC40Y8!5e0!3m2!1sru!2sua!4v1453294615596" width="1170" height="450" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <!-- / map -->
             <div class='grid_row clearfix'>
                 <!-- contact detail -->
@@ -144,6 +134,20 @@
                 </div>
                 <!-- / conatct form -->
             </div>
+
+            <div class='grid_row clearfix' style='padding-top: 0px;padding-bottom: 0px;'>
+                <div class='grid_col grid_col_12'>
+                    <div class='ce clearfix'>
+                        <h3 class="ce_title">How To Find Us</h3>
+                        <div class="map-border">
+                            <div class="google-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25295.930156304785!2d16.371063311644324!3d48.208404844730474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07986fcad78b%3A0x73f5a4d267cc4174!2zTmFnbGVyZ2Fzc2UgMTAsIDEwMTAgV2llbiwg0JDQstGB0YLRgNC40Y8!5e0!3m2!1sru!2sua!4v1453294615596" width="1170" height="450" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <!-- / main content -->
         <!-- patter container / -->

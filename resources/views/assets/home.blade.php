@@ -420,48 +420,14 @@
             <div class='grid_col grid_col_12'>
                 <div class='ce clearfix'>
                     <div>
-                        <div id='gallery-1' class='gallery galleryid-2288 gallery-columns-3 gallery-size-large'>
+                        <div id='gallery-1' class='gallery galleryid-2288 gallery-columns-3 gallery-size-large'>@foreach ($gsData as $Data)
                             <!-- gallery item -->
                             <div class='gallery-item'>
                                 <div class='gallery-icon landscape'>
-                                    <img width="1024" height="1024" src="assets/pic/2015/08/im1.jpg" class="attachment-large" alt="portfolio_3" />
+                                    <img width="1024" height="1024" src="{{$Data->image}}" class="attachment-large" alt="portfolio_3" />
                                 </div>
-                            </div>
-                            <!-- / galery item -->
-                            <!-- galery item -->
-                            <div class='gallery-item'>
-                                <div class='gallery-icon landscape'>
-                                    <img width="1024" height="1024" src="assets/pic/2015/08/im2.jpg" class="attachment-large" alt="portfolio_4" />
-                                </div>
-                            </div>
-                            <!-- / galery item -->
-                            <!-- galery item -->
-                            <div class='gallery-item'>
-                                <div class='gallery-icon landscape'>
-                                    <img width="1024" height="1024" src="assets/pic/2015/08/im3.jpg" class="attachment-large" alt="portfolio_5" />
-                                </div>
-                            </div>
-                            <br style="clear: both" />
-                            <div class='gallery-item'>
-                                <div class='gallery-icon landscape'>
-                                    <img width="1024" height="1024" src="assets/pic/2015/08/im4.jpg" class="attachment-large" alt="portfolio_1" />
-                                </div>
-                            </div>
-                            <!-- / galery item -->
-                            <!-- galery item -->
-                            <div class='gallery-item'>
-                                <div class='gallery-icon landscape'>
-                                    <img width="1024" height="1024" src="assets/pic/2015/08/im5.jpg" class="attachment-large" alt="blog_3_col_4" />
-                                </div>
-                            </div>
-                            <!-- / galery item -->
-                            <!-- galery item -->
-                            <div class='gallery-item'>
-                                <div class='gallery-icon landscape'>
-                                    <img width="1024" height="1024" src="assets/pic/2015/08/im6.jpg" class="attachment-large" alt="portfolio_2" />
-                                </div>
-                            </div>
-                            <!-- / gallery item -->
+                            </div>@endforeach
+
                             <br style="clear: both" />
                         </div>
                     </div>

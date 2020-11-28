@@ -29,7 +29,7 @@
                                                </div>
 
                                                 <!-- coupon form -->
-                                                <div class="woocommerce-info">Have a account? <a href="http://127.0.0.1:8000/admin/login" class="showcoupon">Click here to login</a></div>
+                                                <div class="woocommerce-info">Have an account? <a href="http://127.0.0.1:8000/admin/login" class="showcoupon">Click here to login</a></div>
 
                                                 <!-- / coupone form -->
                                                 <!-- checkout form -->
