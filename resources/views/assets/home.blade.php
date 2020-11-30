@@ -232,7 +232,7 @@
                 <p style="text-align: center;">Game in early childhood is the best foundation for success in school. It develops all necessary learning skills.
                     <br /> Our activities will challenge and develop
                      your child’s creativity, imagination, thinking skills, and social skills..</p>
-                <p style="text-align: center;"> <a href='{{asset('/package')}}' class='cws_button customized' data-bg_hover_color='#fec20b' data-bg_color='#3eb2cf' data-text_color='#fff'>Reserve now</a> <a href='{{asset('/about')}}' class='cws_button'>Learn More</a>
+                <p style="text-align: center;"> <a href='{{asset('/package')}}' class='cws_button customized' data-bg_hover_color='#fec20b' data-bg_color='#3eb2cf' data-text_color='#fff'>Reserve now</a> <a href='http://127.0.0.1:8000/admin/apply_for_register_your_baby/add?ref=8fv1HQ3' class='cws_button'>Register your baby</a>
             </div>
         </div>
     </div>

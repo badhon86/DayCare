@@ -285,7 +285,7 @@
                                                 <div class='button_cont'><a href='' class='cws_button small'>Read More</a></div>
 
                                             </div>
-                                        <div class='button_cont'><a href='{{asset('/userregi')}}' class='cws_button small'>if you are not a registered user,then click here for registration request</a></div>
+                                        <div class='button_cont'><a href='http://127.0.0.1:8000/admin/apply_for_register_your_baby/add?ref=8fv1HQ3' class='cws_button small'>if you are not a registered user,then click here for registration request</a></div>
 
                                         </div>
                                     </div>
