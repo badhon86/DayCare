@@ -209,12 +209,12 @@
                                     <!-- post item -->
                                     <div class='post_item'>
                                         <div class='post_preview clearfix'>
-                                            <a href='badhon35-2092@diu.edu.bd' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/badhon.jpg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei@2x.jpg' alt />
+                                            <a href='#' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/badhon.jpg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei@2x.jpg' alt />
                                                 <div class='hover-effect'></div>
                                                 <div class='links'><span class='fa fa-link'></span></div>
                                             </a>
-                                            <div class='post_title'><a href='blog-post.html'>Badhon Sarkar</a></div>
-                                            <div class='post_content'> <a href='badhon35-2092@diu.edu.bd'>badhon35-2092@diu.edu.bd</a></div>
+                                            <div class='post_title'><a href='#'>Badhon Sarkar</a></div>
+                                            <div class='post_content'> <a href='#'>badhon35-2092@diu.edu.bd</a></div>
                                             <div class='post_date'>Designer,Developer</div>
                                         </div>
                                     </div>
@@ -226,8 +226,8 @@
                                                 <div class='hover-effect'></div>
                                                 <div class='links'><span class='fa fa-link'></span></div>
                                             </a>
-                                            <div class='post_title'><a href='blog-post.html'>Hedaitul Islam</a></div>
-                                            <div class='post_content'><a href='hedaitul35-2156@diu.edu.bd'>hedaitul35-2156@diu.edu.bd</a></div>
+                                            <div class='post_title'><a href='#'>Hedaitul Islam</a></div>
+                                            <div class='post_content'><a href='#'>hedaitul35-2156@diu.edu.bd</a></div>
                                             <div class='post_date'>Developer</div>
                                         </div>
                                     </div>
@@ -240,7 +240,7 @@
                                                 <div class='links'><span class='fa fa-link'></span></div>
                                             </a>
                                             <div class='post_title'><a href='#'>Mehedi Hasan</a></div>
-                                            <div class='post_content'><a href='mehedi35-2134@diu.edu.bd'>mehedi35-2134@diu.edu.bd</a></div>
+                                            <div class='post_content'><a href='#'>mehedi35-2134@diu.edu.bd</a></div>
                                             <div class='post_date'>Developer</div>
                                         </div>
                                     </div>
