@@ -9,7 +9,7 @@
     <div class='container'>
         <div class='title'>
             <h1>monitor your kid</h1></div>
-        <nav class="bread-crumbs"><a href="index.html">Home</a><i class="delimiter fa fa-chevron-right"></i><span class="current">monitor</span></nav>
+        <nav class="bread-crumbs"><a href="#">Home</a><i class="delimiter fa fa-chevron-right"></i><span class="current">monitor</span></nav>
         <!-- .breadcrumbs -->
     </div>
     <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
@@ -25,52 +25,43 @@
             <!-- sidebar -->
             <aside class='sb_right'>
                 <br/>
-                {{-- <div class="cws-widget">
-                    <form method="get" class="search-form" action="#">
-                        <label>
-                            <span class="screen-reader-text">Search for:</span>
-                            <input type="text" class="search-field vova" value="" name="s" title="Search for:" />
-                        </label>
-                        <input type="submit" class="search-submit" value="Search" />
-                        <input type='hidden' name='lang' value='en' />
-                    </form>
-                </div> --}}
+
                 <div class="cws-widget">
-                    <div class="widget-title">Recent Posts</div>
+                    <div class="widget-title">comming soon</div>
                     <!-- / post item -->
                     <!-- post item -->
                     <div class='post_item'>
                         <div class='post_preview clearfix'>
-                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei.jpg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei@2x.jpg' alt />
+                            <a href='#' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei.jpg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei@2x.jpg' alt />
                                 <div class='hover-effect'></div>
                                 <div class='links'><span class='fa fa-link'></span></div>
                             </a>
-                            <div class='post_title'><a href='blog-post.html'>Morbi iaculis</a></div>
-                            <div class='post_content'>Quisque in nulla ut metus cursus commodo <a href='blog-post.html'>...</a></div>
+                            <div class='post_title'><a href='#'>comming soon</a></div>
+                            <div class='post_content'>comming soon <a href='#'>...</a></div>
                         </div>
                     </div>
                     <!-- / post item -->
                     <!-- post item -->
                     <div class='post_item'>
                         <div class='post_preview clearfix'>
-                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/58x58-blog_3_col_3-304vqj49s4b9oehlhrm1hm.jpg' data-at2x='assets/pic/bfi_thumb/58x58-blog_3_col_3-304vqj49s4b9oehlhrm1hm@2x.jpg' alt />
+                            <a href='#' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/58x58-blog_3_col_3-304vqj49s4b9oehlhrm1hm.jpg' data-at2x='assets/pic/bfi_thumb/58x58-blog_3_col_3-304vqj49s4b9oehlhrm1hm@2x.jpg' alt />
                                 <div class='hover-effect'></div>
                                 <div class='links'><span class='fa fa-link'></span></div>
                             </a>
-                            <div class='post_title'><a href='blog-post.html'>Praesent sagittis</a></div>
-                            <div class='post_content'>Maecenas vel elit at dui condimentum lob <a href='blog-post.html'>...</a></div>
+                            <div class='post_title'><a href='#'>comming soon</a></div>
+                            <div class='post_content'>comming soon <a href='#'>...</a></div>
                         </div>
                     </div>
                     <!-- / post item -->
                     <!-- post item -->
                     <div class='post_item'>
                         <div class='post_preview clearfix'>
-                            <a href='blog-post.html' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/58x58-portfolio_4-304vqkvlk7rwl2xsvw77yi.jpg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_4-304vqkvlk7rwl2xsvw77yi@2x.jpg' alt />
+                            <a href='#' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/58x58-portfolio_4-304vqkvlk7rwl2xsvw77yi.jpg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_4-304vqkvlk7rwl2xsvw77yi@2x.jpg' alt />
                                 <div class='hover-effect'></div>
                                 <div class='links'><span class='fa fa-link'></span></div>
                             </a>
-                            <div class='post_title'><a href='blog-post.html'>Morbi iaculis euismod</a></div>
-                            <div class='post_content'>Aenean molestie faucibus fringilla. Nam <a href='blog-post.html'>...</a></div>
+                            <div class='post_title'><a href='#'>comming soon</a></div>
+                            <div class='post_content'>comming soon <a href='#'>...</a></div>
                         </div>
                     </div>
                 </div>
@@ -247,7 +238,7 @@
                                             <div class='date-cont'><span class='day'>27</span><span class='month' title='July'><span>Jul</span></span><span class='year'>2015</span><i class='springs'></i></div>
                                         </div>
                                         <div class="post_info_header">
-                                            <h3 class="ce_title"><a href="blog-post.html">Image post</a></h3> </div>
+                                            <h3 class="ce_title"><a href="#">comming soon</a></h3> </div>
                                     </div>
                                     <div class='media_info_wrapper'>
                                         <div class="media_part">
@@ -275,12 +266,12 @@
                                         <div class='post_content'>
                                             <p>Contents coming soon
                                                 <br /> </p>
-                                            <p><a href="blog-post.html#more-1789" class="more-link">[&#8230;]</a></p>
+                                            <p><a href="#" class="more-link">[&#8230;]</a></p>
                                         </div>
                                         <div class='meta_cont_wrapper'>
                                             <div class='meta_cont'>
                                                 <div class="post_info">
-                                                    <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">Standart</a><span class="v_sep"></span><a href="#" rel="category tag">Uncategorized</a></div>
+                                                    <div class='post_categories'><i class='fa fa-bookmark'></i><a href="#" rel="category tag">comming</a><span class="v_sep"></span><a href="#" rel="category tag">soon</a></div>
                                                 </div>
                                                 <div class='button_cont'><a href='' class='cws_button small'>Read More</a></div>
 
