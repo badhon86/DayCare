@@ -135,7 +135,7 @@
                                         <!-- / menu item -->
                                         <!-- menu item -->
                                         <li class="menu-item menu-item-has-children">
-                                            <a href="{{asset('/monitor')}}">
+                                            <a href="http://127.0.0.1:8000/admin/monitor">
                                                 <div class="menu-item right bees-end"><span></span>
                                                     <div class="line-one"></div>
                                                     <div class="line-two"></div>
@@ -257,7 +257,7 @@
                             <div class='cws_tweets tweets_carousel paginated'>
                                 <div class='post_content'><a href='{{asset('/')}}'>Home</a></div> <p>
                                     <div class='post_content'><a href='{{asset('/package')}}'>Package</a><p></div> <p>
-                                        <div class='post_content'><a href='{{asset('/monitor')}}'>Monitor</a><p></div> <p>
+                                        <div class='post_content'><a href='http://127.0.0.1:8000/admin/monitor'>Monitor</a><p></div> <p>
                                             <div class='post_content'><a href='{{asset('/gallery')}}'>Gallery</a><p></div> <p>
                                                 <div class='post_content'><a href='{{asset('/about')}}'>About</a><p></div> <p>
                                                     <div class='post_content'><a href='{{asset('/contact')}}'>Contact</a><p></div>
