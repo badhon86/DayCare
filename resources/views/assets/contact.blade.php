@@ -107,18 +107,20 @@
                         <div>
                             <div role="form" class="cf" id="cf-f16-p10-o1" lang="en-US" dir="ltr">
                                 <div class="screen-reader-response"></div>
-                            <form action="" method="post" class="cf-form contact-form" novalidate="novalidate">
-                             <p>Name*
+                            <form action="submit" method="POST" class="cf-form contact-form" novalidate="novalidate">
+                                @csrf
+                                    <p>Name
                                         <br />
-                                        <span class="cf-form-control-wrap your-name"><input type="text" name="name" value="" size="107" class="cf-form-control cf-text cf-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
-                                    <p>Email*
+                                        <span class="cf-form-control-wrap your-name"><input type="text" name="name"  size="107" class="cf-form-control cf-text cf-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
+                                    <p>Email
                                         <br />
-                                        <span class="cf-form-control-wrap your-email"><input type="email" name="email" value="" size="107" class="cf-form-control cf-text cf-email cf-validates-as-required cf-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
+                                        <span class="cf-form-control-wrap your-email"><input type="email" name="email"  size="107" class="cf-form-control cf-text cf-email cf-validates-as-required cf-validates-as-email" aria-required="true" aria-invalid="false" /></span> </p>
                                     <p>Message
                                         <br />
-                                        <span class="cf-form-control-wrap your-message"><textarea name="message" cols="107" rows="8" class="cf-form-control cf-textarea" aria-invalid="false"></textarea></span> </p>
+                                        <span class="cf-form-control-wrap your-message"><input type="textarea" name="text" cols="107" rows="8" class="cf-form-control cf-textarea" aria-invalid="false"></textarea></span> </p>
                                     <p>
-                                        <input type="submit" value="Send" class="cf-form-control cf-submit" />
+                                        <button type="submit">send</button>
+                                        {{-- class="cf-form-control cf-submit" /> --}}
                                     </p>
                                     {{-- <div class="cws_msg_box error-box clearfix">
                                         <div class="icon_section"><i class="fa fa-exclamation"></i></div>

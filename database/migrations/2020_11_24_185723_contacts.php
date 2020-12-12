@@ -14,13 +14,13 @@ class Contacts extends Migration
     public function up()
     {
         Schema::create('contacts', function (Blueprint $table) {
-            
+
             $table->timestamps();
 			$table->bigIncrements('id');
 			$table->text('name')->nullable();
 			$table->string('email')->nullable();
 			$table->longText('text')->nullable();
-			
+
         });
     }
 

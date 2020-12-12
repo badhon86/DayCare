@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Contact;
 class ContactController extends Controller
 {
     /**
@@ -21,9 +21,14 @@ class ContactController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function save(Request $req)
     {
-        //
+       // print_r($req->input());
+        $contacts = new Contact;
+        $contacts->name= $req->name;
+        $contacts->email=$req->email;
+        $contacts->text=$req->text;
+        echo $contacts->save();
     }
 
     /**
@@ -39,9 +44,9 @@ class ContactController extends Controller
 
             'name' => 'required',
             'email' => 'required',
-            'message' => 'required'
+            'text' => 'required'
         ]);
-        if (Message::insert($data)) {
+        if (contacts::insert($data)) {
             return 'OK';
         }
         return 'no';

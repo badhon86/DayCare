@@ -51,4 +51,5 @@ Route::get('/contact', [
     'uses' => 'ContactController@index',
     'as'   => '/contact'
 ]);
-//Route::post('/contact', 'ContactController@store')->name('contact');
+
+Route::post('submit', 'ContactController@save');
