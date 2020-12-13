@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2020 at 06:09 PM
+-- Generation Time: Dec 13, 2020 at 08:14 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -1310,6 +1310,33 @@ USE `daycare`;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `baby`
+--
+
+CREATE TABLE `baby` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `baby_name` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `birth_certificate` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `gender` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` int(11) DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `baby`
+--
+
+INSERT INTO `baby` (`created_at`, `updated_at`, `id`, `baby_name`, `birth_certificate`, `gender`, `father`, `mother`, `email`, `phone`, `address`) VALUES
+('2020-11-24 11:07:01', '2020-11-24 11:21:32', 1, 'badhon kumar sarkar', 'storage/files/2020/11/24/facafc73b162253d96af35a5dac8cf86.jpg', 'male', 'Shyamal Kumar Sarkar', 'Shabitry Rani Sarkar', 'badhon35-2092@diu.edu.bd', 1761374611, '3A/13 salimullaroad,dhaka');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `cb_menus`
 --
 
@@ -1329,7 +1356,17 @@ CREATE TABLE `cb_menus` (
 --
 
 INSERT INTO `cb_menus` (`id`, `name`, `icon`, `path`, `type`, `sort_number`, `cb_modules_id`, `parent_cb_menus_id`) VALUES
-(3, 'Gallery', NULL, NULL, 'module', 0, 3, NULL);
+(3, 'Gallery', NULL, NULL, 'module', 0, 3, NULL),
+(6, 'Employee', 'fa fa-address-card-o', NULL, 'module', 7, 5, NULL),
+(10, 'Baby', NULL, NULL, 'module', 8, 9, NULL),
+(11, 'Contacts', 'fa fa-comments', NULL, 'module', 9, 10, NULL),
+(14, 'Price', NULL, NULL, 'module', 10, 12, NULL),
+(16, 'Reservation', 'fa fa-credit-card', NULL, 'module', 1, 13, NULL),
+(17, 'Homegallery', NULL, NULL, 'module', 2, 14, NULL),
+(20, 'Notice', NULL, NULL, 'module', 3, 16, NULL),
+(21, 'Apply for register your baby', 'fa fa-hand-o-right', NULL, 'module', 4, 17, NULL),
+(23, 'Message', 'fa fa-asterisk', NULL, 'module', 5, 18, NULL),
+(25, 'Monitor', 'fa fa-bars', NULL, 'module', 6, 19, NULL);
 
 -- --------------------------------------------------------
 
@@ -1351,7 +1388,18 @@ CREATE TABLE `cb_modules` (
 --
 
 INSERT INTO `cb_modules` (`id`, `name`, `icon`, `table_name`, `controller`, `last_column_build`) VALUES
-(3, 'Gallery', 'fa fa-bars', 'gallery', 'AdminGalleryController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Image\",\"column_field\":\"image\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]');
+(3, 'Gallery', 'fa fa-bars', 'gallery', 'AdminGalleryController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Image\",\"column_field\":\"image\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(5, 'Employee', 'fa fa-address-card-o', 'employee', 'AdminEmployeeController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Name\",\"column_field\":\"name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Position\",\"column_field\":\"position\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Thumb Image\",\"column_field\":\"thumb_image\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"dimension 1000 * 1000\",\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Image\",\"column_field\":\"image\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"dimension 248*248\",\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Linkedin\",\"column_field\":\"linkedin\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"plz upload the link\",\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Facebook\",\"column_field\":\"facebook\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"plz upload the link\",\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Twitter\",\"column_field\":\"twitter\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"plz upload the link\",\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(9, 'Baby', 'fa fa-edit', 'baby', 'AdminBabyController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Baby Name\",\"column_field\":\"baby_name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":false,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Birth Certificate\",\"column_field\":\"birth_certificate\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":false,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Gender\",\"column_field\":\"gender\",\"column_type\":\"radio\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"male\",\"label\":\"male\"},{\"key\":\"female\",\"label\":\"female\"}],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":false,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Father\",\"column_field\":\"father\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":false,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Mother\",\"column_field\":\"mother\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":false,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Email\",\"column_field\":\"email\",\"column_type\":\"email\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Phone\",\"column_field\":\"phone\",\"column_type\":\"number\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Address\",\"column_field\":\"address\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(10, 'Contacts', 'fa fa-comments', 'contacts', 'AdminContactsController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Name\",\"column_field\":\"name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":true,\"column_detail\":\"on\",\"column_edit\":true,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Email\",\"column_field\":\"email\",\"column_type\":\"email\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":true,\"column_detail\":\"on\",\"column_edit\":true,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Text\",\"column_field\":\"text\",\"column_type\":\"text_area\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":null,\"column_text_min\":null,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":true,\"column_detail\":\"on\",\"column_edit\":true,\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(12, 'Price', 'fa fa-turkish-lira', 'price', 'AdminPriceController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"D Price\",\"column_field\":\"d_price\",\"column_type\":\"money\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"W Price\",\"column_field\":\"w_price\",\"column_type\":\"money\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"M Price\",\"column_field\":\"m_price\",\"column_type\":\"money\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(13, 'Reservation', 'fa fa-credit-card', 'reservation', 'AdminReservationController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Baby Idt\",\"column_field\":\"baby_idt\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Baby Name\",\"column_field\":\"baby_name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Baby Image\",\"column_field\":\"baby_image\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Package\",\"column_field\":\"Package\",\"column_type\":\"radio\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"daily package\",\"label\":\"daily package(799BDT)\"},{\"key\":\"weekly package\",\"label\":\"weekly package(3599BDT)\"},{\"key\":\"monthly package\",\"label\":\"monthly package(11000BDT)\"}],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Payment\",\"column_field\":\"Payment\",\"column_type\":\"radio\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"physical payment\",\"label\":\"physical payment\"},{\"key\":\"payment by bkash\",\"label\":\"payment by bkash\"}],\"column_sql_query\":null,\"column_help\":\"for bkash pay, go to payment on bkash app search daycare and submit payment.\",\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Transaction Id\",\"column_field\":\"Transaction_id\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"write the transaction id\",\"column_mandatory\":false,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Reservation Date\",\"column_field\":\"Reservation_date\",\"column_type\":\"date\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":\"2020-11-28\",\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"select reservation date\",\"column_mandatory\":true,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(14, 'Homegallery', 'fa fa-area-chart', 'homegallery', 'AdminHomegalleryController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Image\",\"column_field\":\"image\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(16, 'Notice', 'fa fa-bell-o', 'notice', 'AdminNoticeController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"From\",\"column_field\":\"from\",\"column_type\":\"select_option\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"manager\",\"label\":\"manager\"},{\"key\":\"director\",\"label\":\"director\"},{\"key\":\"CEO\",\"label\":\"CEO\"},{\"key\":\"employee\",\"label\":\"employee\"}],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Date\",\"column_field\":\"date\",\"column_type\":\"date\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":\"2020-12-01\",\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Notice\",\"column_field\":\"notices\",\"column_type\":\"wysiwyg\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":null,\"column_text_min\":null,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]');
+INSERT INTO `cb_modules` (`id`, `name`, `icon`, `table_name`, `controller`, `last_column_build`) VALUES
+(17, 'Apply for register your baby', 'fa fa-hand-o-right', 'registration', 'AdminApplyForRegisterYourBabyController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Baby Name\",\"column_field\":\"baby_name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"please enter your baby\'s name\",\"column_mandatory\":\"on\",\"column_browse\":true,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Gender\",\"column_field\":\"gender\",\"column_type\":\"select_option\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"male\",\"label\":\"male\"},{\"key\":\"female\",\"label\":\"female\"}],\"column_sql_query\":null,\"column_help\":\"please select your child\'s gender\",\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Picture of your baby\",\"column_field\":\"baby_image\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"please upload your kid\'s picture. maximum size 1.0 MB\",\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Picture of birth certificate\",\"column_field\":\"birth_certificate\",\"column_type\":\"image\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"please upload your kid\'s birth certificate. maximum size 1.0 MB\",\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Father\'s Name\",\"column_field\":\"father_name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Mother\'s Name\",\"column_field\":\"mother_name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Email\",\"column_field\":\"email\",\"column_type\":\"email\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":\"please enter parent\'s email here\",\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Mobile No 1\",\"column_field\":\"mobile_no1\",\"column_type\":\"number\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Mobile No 2\",\"column_field\":\"mobile_no2\",\"column_type\":\"number\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":false,\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Telephone\",\"column_field\":\"tel\",\"column_type\":\"number\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":false,\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Present Address\",\"column_field\":\"present_address\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Parmanant Address\",\"column_field\":\"parmanant_address\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Father\'s Occupation\",\"column_field\":\"father_occupation\",\"column_type\":\"select_option\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"business\",\"label\":\"business\"},{\"key\":\"Farmer\",\"label\":\"Farmer\"},{\"key\":\"Teacher\",\"label\":\"Teacher\"},{\"key\":\"Doctor\",\"label\":\"Doctor\"},{\"key\":\"Employee\",\"label\":\"Employee\"},{\"key\":\"other\",\"label\":\"other\"}],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Mother\'s Occupation\",\"column_field\":\"mother_occupation\",\"column_type\":\"select_option\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"business\",\"label\":\"business\"},{\"key\":\"House wife\",\"label\":\"House wife\"},{\"key\":\"Teacher\",\"label\":\"Teacher\"},{\"key\":\"Doctor\",\"label\":\"Doctor\"},{\"key\":\"Employee\",\"label\":\"Employee\"},{\"key\":\"other\",\"label\":\"other\"}],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Dear Visitor ,\",\"column_field\":\"dear visitor ,\",\"column_type\":\"radio\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"i agree\",\"label\":\"i agree\"}],\"column_sql_query\":null,\"column_help\":\"after apply for your kid\'s registration it will take less or more 15 minutes for validation check. after verifying we will contact with you. And we will provide you new user and password. Thank you.\",\"column_mandatory\":\"on\",\"column_browse\":false,\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":false,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(18, 'Message', 'fa fa-asterisk', 'message', 'AdminMessageController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":true,\"column_detail\":true,\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":true,\"column_detail\":true,\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Notice\",\"column_field\":\"notice\",\"column_type\":\"wysiwyg\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":\"500\",\"column_text_max\":null,\"column_text_min\":null,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]'),
+(19, 'Monitor', 'fa fa-bars', 'monitor', 'AdminMonitorController', '[{\"column_label\":\"Created At\",\"column_field\":\"created_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Updated At\",\"column_field\":\"updated_at\",\"column_type\":\"datetime\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":null,\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":null,\"column_add\":null,\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Serial\",\"column_field\":\"serial\",\"column_type\":\"number\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Baby Idt\",\"column_field\":\"idt\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":\"reservation\",\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":\"id\",\"column_option_display\":\"baby_name\",\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[{\"column\":\"created_at\",\"primary_key\":false,\"display\":false},{\"column\":\"updated_at\",\"primary_key\":false,\"display\":false},{\"column\":\"id\",\"primary_key\":true,\"display\":false},{\"column\":\"baby_idt\",\"primary_key\":false,\"display\":false},{\"column\":\"baby_name\",\"primary_key\":false,\"display\":true},{\"column\":\"baby_image\",\"primary_key\":false,\"display\":false},{\"column\":\"Package\",\"primary_key\":false,\"display\":false},{\"column\":\"Payment\",\"primary_key\":false,\"display\":false},{\"column\":\"Transaction_id\",\"primary_key\":false,\"display\":false},{\"column\":\"Reservation_date\",\"primary_key\":false,\"display\":false}]},{\"column_label\":\"Name\",\"column_field\":\"name\",\"column_type\":\"text\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":\"reservation\",\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":\"id\",\"column_option_display\":\"baby_name\",\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[{\"column\":\"created_at\",\"primary_key\":false,\"display\":false},{\"column\":\"updated_at\",\"primary_key\":false,\"display\":false},{\"column\":\"id\",\"primary_key\":true,\"display\":false},{\"column\":\"baby_idt\",\"primary_key\":false,\"display\":false},{\"column\":\"baby_name\",\"primary_key\":false,\"display\":true},{\"column\":\"baby_image\",\"primary_key\":false,\"display\":false},{\"column\":\"Package\",\"primary_key\":false,\"display\":false},{\"column\":\"Payment\",\"primary_key\":false,\"display\":false},{\"column\":\"Transaction_id\",\"primary_key\":false,\"display\":false},{\"column\":\"Reservation_date\",\"primary_key\":false,\"display\":false}]},{\"column_label\":\"Attendance\",\"column_field\":\"attendance\",\"column_type\":\"radio\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[{\"key\":\"present\",\"label\":\"present\"},{\"key\":\"absent\",\"label\":\"absent\"}],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Activity\",\"column_field\":\"activity\",\"column_type\":\"wysiwyg\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":null,\"column_text_display_limit\":\"200\",\"column_text_max\":null,\"column_text_min\":null,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]},{\"column_label\":\"Date\",\"column_field\":\"date\",\"column_type\":\"date\",\"column_file_encrypt\":\"on\",\"column_image_width\":null,\"column_image_height\":null,\"column_option_table\":null,\"column_date_format\":\"2020-12-11\",\"column_text_display_limit\":150,\"column_text_max\":255,\"column_text_min\":0,\"column_money_prefix\":null,\"column_money_precision\":null,\"column_money_thousand_separator\":null,\"column_money_decimal_separator\":null,\"column_option_value\":null,\"column_option_display\":null,\"column_option_sql_condition\":null,\"column_options\":[],\"column_sql_query\":null,\"column_help\":null,\"column_mandatory\":\"on\",\"column_browse\":\"on\",\"column_detail\":\"on\",\"column_edit\":\"on\",\"column_add\":\"on\",\"column_filterable\":null,\"column_foreign\":null,\"listTableColumns\":[]}]');
 
 -- --------------------------------------------------------
 
@@ -1369,7 +1417,11 @@ CREATE TABLE `cb_roles` (
 --
 
 INSERT INTO `cb_roles` (`id`, `name`) VALUES
-(1, 'Admin');
+(1, 'Manager'),
+(2, 'Director'),
+(3, 'user'),
+(4, 'Visitor'),
+(5, 'CEO');
 
 -- --------------------------------------------------------
 
@@ -1396,7 +1448,132 @@ INSERT INTO `cb_role_privileges` (`id`, `cb_roles_id`, `cb_menus_id`, `can_brows
 (1, 1, 1, 1, 1, 1, 1, 1),
 (2, 1, 2, 1, 1, 1, 1, 1),
 (3, 1, 3, 1, 1, 1, 1, 1),
-(4, 1, 4, 1, 1, 1, 1, 1);
+(4, 1, 4, 1, 1, 1, 1, 1),
+(5, 1, 6, 1, 1, 1, 1, 1),
+(7, 1, 8, 1, 1, 1, 1, 1),
+(8, 1, 9, 1, 1, 1, 1, 1),
+(9, 1, 10, 1, 1, 1, 1, 1),
+(10, 2, 10, 1, 1, 1, 1, 1),
+(11, 2, 6, 1, 1, 1, 1, 1),
+(12, 2, 3, 1, 1, 1, 1, 1),
+(13, 3, 10, 0, 0, 0, 0, 0),
+(14, 3, 6, 0, 0, 0, 0, 0),
+(15, 3, 3, 0, 0, 0, 0, 0),
+(16, 1, 11, 1, 0, 1, 0, 1),
+(17, 3, 11, 0, 0, 0, 0, 0),
+(18, 1, 12, 1, 1, 1, 1, 1),
+(19, 3, 12, 0, 1, 0, 0, 0),
+(20, 1, 14, 1, 1, 1, 1, 1),
+(21, 3, 14, 0, 0, 0, 0, 0),
+(22, 1, 16, 1, 1, 1, 1, 1),
+(23, 3, 16, 0, 1, 0, 0, 0),
+(24, 1, 17, 1, 1, 1, 1, 1),
+(25, 3, 17, 0, 0, 0, 0, 0),
+(26, 1, 19, 1, 1, 1, 1, 1),
+(27, 3, 19, 1, 0, 1, 0, 0),
+(28, 1, 20, 1, 1, 1, 1, 1),
+(29, 3, 20, 1, 0, 1, 0, 0),
+(30, 4, 10, 0, 0, 0, 0, 0),
+(31, 4, 11, 0, 0, 0, 0, 0),
+(32, 4, 6, 0, 0, 0, 0, 0),
+(33, 4, 3, 0, 0, 0, 0, 0),
+(34, 4, 17, 0, 0, 0, 0, 0),
+(35, 4, 20, 0, 0, 0, 0, 0),
+(36, 4, 14, 0, 0, 0, 0, 0),
+(37, 4, 16, 0, 0, 0, 0, 0),
+(38, 2, 11, 1, 1, 1, 1, 1),
+(39, 2, 17, 1, 1, 1, 1, 1),
+(40, 2, 20, 1, 1, 1, 1, 1),
+(41, 2, 14, 1, 1, 1, 1, 1),
+(42, 2, 16, 1, 1, 1, 1, 1),
+(43, 5, 10, 1, 1, 1, 1, 1),
+(44, 5, 11, 1, 1, 1, 1, 1),
+(45, 5, 6, 1, 1, 1, 1, 1),
+(46, 5, 3, 1, 1, 1, 1, 1),
+(47, 5, 17, 1, 1, 1, 1, 1),
+(48, 5, 20, 1, 1, 1, 1, 1),
+(49, 5, 14, 1, 1, 1, 1, 1),
+(50, 5, 16, 1, 1, 1, 1, 1),
+(51, 4, 21, 1, 1, 0, 0, 0),
+(52, 1, 21, 1, 0, 1, 0, 1),
+(53, 1, 23, 1, 1, 1, 1, 1),
+(54, 4, 23, 1, 0, 1, 0, 0),
+(55, 3, 21, 0, 0, 0, 0, 0),
+(56, 3, 23, 0, 0, 0, 0, 0),
+(57, 1, 25, 1, 1, 1, 1, 1),
+(58, 3, 25, 1, 0, 1, 0, 0),
+(59, 4, 25, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `text` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `contacts`
+--
+
+INSERT INTO `contacts` (`created_at`, `updated_at`, `id`, `name`, `email`, `text`) VALUES
+(NULL, NULL, 2, 'badhon sarkar', 'dcsoft@gmail.com', 'aasscdthrgefdvbghfgb dgh ddgz'),
+(NULL, NULL, 3, 'badhon sarkar', 'dcsoft@gmail.com', 'aasscdthrgefdvbghfgb dgh ddgz'),
+(NULL, NULL, 4, 'badhon sarkar', 'dcsoft@gmail.com', 'aasscdthrgefdvbghfgb dgh ddgz'),
+(NULL, NULL, 5, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 6, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 7, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 8, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 9, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 10, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 11, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 12, 'badhon sarkar', 'dcsoft@gmail.com', 'dttvgyugy'),
+(NULL, NULL, 13, 'badhon sarkar', 'dcsoft@gmail.com', 'gggggggggggggggggggggggg'),
+(NULL, NULL, 14, 'badhon sarkar', 'dcsoft@gmail.com', 'badhon sarkar'),
+(NULL, NULL, 15, 'badhon sarkar', 'dcsoft@gmail.com', 'badhon sarkar'),
+(NULL, NULL, 16, 'badhon sarkar', 'dcsoft@gmail.com', 'badhon sarkar'),
+(NULL, NULL, 17, 'toha', 'toha@gmail.com', 'hhhdhdhd'),
+(NULL, NULL, 18, 'hh', 'dcsoft@gmail.com', 'hhhvhv');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employee`
+--
+
+CREATE TABLE `employee` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `position` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `thumb_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `linkedin` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `facebook` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `twitter` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`created_at`, `updated_at`, `id`, `name`, `position`, `thumb_image`, `image`, `linkedin`, `facebook`, `twitter`) VALUES
+('2020-11-22 00:39:32', '2020-11-22 00:39:32', 1, 'Liza Banu', 'Nanny', 'storage/files/2020/11/22/414f0216ddd4f1e94f48ca7292bc7462.jpg', 'storage/files/2020/11/22/59e8271015eed4badae11de939345bb5.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/'),
+('2020-11-22 00:40:53', '2020-11-22 00:40:53', 2, 'Moriom Aktar', 'Babysitter', 'storage/files/2020/11/22/ae923d680c636d414f4519ec370561c3.jpg', 'storage/files/2020/11/22/6c2eb2d58d7f6e194e18ef3a3e69074c.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/'),
+('2020-11-22 01:04:32', '2020-11-22 01:04:32', 3, 'Farzana Ahmed', 'Nutritionist', 'storage/files/2020/11/22/7fcd4ce12d3aa21d34f923090a1c3849.jpg', 'storage/files/2020/11/22/d52a9095351347f72be72e91822ac3b0.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/'),
+('2020-11-22 01:05:48', '2020-11-22 01:05:48', 4, 'Kulsuma Khatun', 'Nanny', 'storage/files/2020/11/22/4786aaa3bbc25155a4c390c75bd9fbc8.jpg', 'storage/files/2020/11/22/b644c95ba2c520e5ca671cf9b2025d33.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/'),
+('2020-11-22 01:08:16', '2020-11-22 01:08:16', 5, 'Ferdousy Ahmed', 'Babysitter', 'storage/files/2020/11/22/95906adb74ab832973fa12a4fcf7e39b.jpg', 'storage/files/2020/11/22/14feab414558bda6cfd1eab0332d062b.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/'),
+('2020-11-22 01:09:51', '2020-11-22 01:09:51', 6, 'Effat Tamanna', 'Nanny', 'storage/files/2020/11/22/9970f4b5c274bff61a3ce5c49867f4b4.jpg', 'storage/files/2020/11/22/5200b9c1eda8a4cbb71eeff907df53c9.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/'),
+('2020-11-22 01:11:09', '2020-11-22 01:11:09', 7, 'Nahid Afros', 'Nanny', 'storage/files/2020/11/22/1a4cb2fcd2b2c18ec264c10ee17744e6.jpg', 'storage/files/2020/11/22/b18becff9b28eb11674beb7717fa5532.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/'),
+('2020-11-22 01:13:42', '2020-11-22 01:13:42', 8, 'Nourn Islam', 'Babysitter', 'storage/files/2020/11/22/0e3360b91f556d9b30c65db6a7c6e0ae.jpg', 'storage/files/2020/11/22/376e192ad0fb4f64645e5371401daf9f.jpg', 'http://linkedin.com/', 'http://facebook.com/', 'http://twitter.com/');
 
 -- --------------------------------------------------------
 
@@ -1440,6 +1617,48 @@ INSERT INTO `gallery` (`created_at`, `updated_at`, `id`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `homegallery`
+--
+
+CREATE TABLE `homegallery` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `homegallery`
+--
+
+INSERT INTO `homegallery` (`created_at`, `updated_at`, `id`, `image`) VALUES
+('2020-11-28 11:43:41', '2020-11-28 11:43:41', 1, 'storage/files/2020/11/28/16fdc07fbe0c35c3324d53dd7a25d532.jpg'),
+('2020-11-28 11:43:58', '2020-11-28 11:43:58', 2, 'storage/files/2020/11/28/e3d3bf9aa191668b8304ea6f0b2e933c.jpg'),
+('2020-11-28 11:44:08', '2020-11-28 11:44:08', 3, 'storage/files/2020/11/28/f6883710156be587a7080b075ccc48c9.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `message`
+--
+
+CREATE TABLE `message` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `notice` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `message`
+--
+
+INSERT INTO `message` (`created_at`, `updated_at`, `id`, `notice`) VALUES
+('2020-11-30 14:22:12', '2020-11-30 14:46:19', 1, '<h3><span style=\"background-color: rgb(255, 156, 0);\">Dear visitor,</span></h3><h4><span style=\"background-color: rgb(255, 156, 0);\">After confirmation of registration, you will get the baby identity number and your new user password.and you can change it');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -1465,7 +1684,69 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (9, '2020_11_10_174922_gallery', 2),
 (10, '2020_11_13_175022_Gallery', 3),
 (11, '2020_11_13_175737_gallery', 4),
-(12, '2020_11_13_181507_message', 5);
+(12, '2020_11_13_181507_message', 5),
+(13, '2020_11_22_062552_employee', 6),
+(14, '2020_11_22_184450_baby_registration', 7),
+(15, '2020_11_24_155055_baby', 8),
+(16, '2020_11_24_170310_baby', 9),
+(17, '2020_11_24_185723_contacts', 10),
+(18, '2020_11_27_163435_reserve', 11),
+(19, '2020_11_27_163704_reserve', 12),
+(20, '2020_11_27_180549_price', 13),
+(21, '2020_11_27_183003_reservation', 14),
+(22, '2020_11_28_173954_homegallery', 15),
+(23, '2020_11_30_175636_notice', 16),
+(24, '2020_11_30_181515_notice', 17),
+(25, '2020_11_30_192801_registration', 18),
+(26, '2020_11_30_201501_message', 19),
+(27, '2020_12_11_035559_monitor', 20);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `monitor`
+--
+
+CREATE TABLE `monitor` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `serial` int(11) DEFAULT NULL,
+  `idt` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `attendance` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `activity` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `monitor`
+--
+
+INSERT INTO `monitor` (`created_at`, `updated_at`, `id`, `serial`, `idt`, `name`, `attendance`, `activity`, `date`) VALUES
+('2020-12-10 22:18:16', '2020-12-10 22:18:16', 1, 1, '101', 'badhon sarkar', 'present', '<p>he is doing great today. he already completes all his tasks.&nbsp;<img src=\"http://127.0.0.1:8000/storage/files/2020/12/11/7d90ff9000912268d8f64bc948a58ec8jpg.jpg\">and he is playing</p>', '2020-12-11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notice`
+--
+
+CREATE TABLE `notice` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `from` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `notices` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `notice`
+--
+
+INSERT INTO `notice` (`created_at`, `updated_at`, `id`, `from`, `date`, `notices`) VALUES
+('2020-11-30 12:20:02', '2020-11-30 12:20:02', 1, 'manager', '2020-12-01', 'hello mojo');
 
 -- --------------------------------------------------------
 
@@ -1478,6 +1759,92 @@ CREATE TABLE `password_resets` (
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `price`
+--
+
+CREATE TABLE `price` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `d_price` double(8,2) DEFAULT NULL,
+  `w_price` double(8,2) DEFAULT NULL,
+  `m_price` double(8,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `price`
+--
+
+INSERT INTO `price` (`created_at`, `updated_at`, `id`, `d_price`, `w_price`, `m_price`) VALUES
+('2020-11-27 12:09:25', '2020-11-27 12:09:25', 1, 799.00, 3500.00, 11000.00);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE `registration` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `baby_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `gender` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `baby_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `birth_certificate` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mobile_no1` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mobile_no2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tel` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `present_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `parmanant_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_occupation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother_occupation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `dear visitor ,` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`created_at`, `updated_at`, `id`, `baby_name`, `gender`, `baby_image`, `birth_certificate`, `father_name`, `mother_name`, `email`, `mobile_no1`, `mobile_no2`, `tel`, `present_address`, `parmanant_address`, `father_occupation`, `mother_occupation`, `dear visitor ,`) VALUES
+('2020-11-30 13:54:43', '2020-11-30 13:54:43', 1, 'hedaitul islAM', 'male', 'storage/files/2020/11/30/5203a42c217b1549328722be7ce6a150.jpg', 'storage/files/2020/11/30/04d939ed020d876fb1bbb1da065fac96.jpg', 'Shyamal Kumar Sarkar', 'Shabitry Rani Sarkar', 'dcsoft@gmail.com', '1192287', NULL, '1192285', 'qqqqqq', 'asasasasa', 'business', 'Doctor', NULL),
+('2020-11-30 14:03:16', '2020-11-30 14:03:16', 2, 'hedaitul isl', 'male', 'storage/files/2020/11/30/f5600b8bad65bbdb4ef631d73b3ece2a.jpg', 'storage/files/2020/11/30/2d63aba41ae64981c355bb91af2bdfaf.jpg', 'Shyamal Kumar Sarkar', 'Shabitry Rani Sarkar', 'dcsoft@gmail.com', '1192287', '1192287', NULL, '20 street', 'sdgjk', 'Employee', 'other', NULL),
+('2020-12-11 08:36:29', '2020-12-11 08:36:29', 3, 'badhon kumar sarkar', 'male', 'storage/files/2020/12/11/2774906fb52700de5bb5d2d401a4c824.png', 'storage/files/2020/12/11/0ab4e344f871e534063beb3f7879a0e6.jpg', 'Shyamal Kumar Sarkar', 'Shabitry Rani Sarkar', 'dcsoft@gmail.com', '01777777777', NULL, NULL, '20 street', 'frdrd4e5rtyf', 'Teacher', 'Doctor', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reservation`
+--
+
+CREATE TABLE `reservation` (
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `baby_idt` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `baby_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `baby_image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Package` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Payment` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Transaction_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `Reservation_date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `reservation`
+--
+
+INSERT INTO `reservation` (`created_at`, `updated_at`, `id`, `baby_idt`, `baby_name`, `baby_image`, `Package`, `Payment`, `Transaction_id`, `Reservation_date`) VALUES
+('2020-11-27 12:43:10', '2020-11-27 12:43:10', 1, '101', 'badhon kumar sarkar', 'storage/files/2020/11/27/defe75de32dad49bfc797344189a5dc4.jpg', 'daily package', 'physical payment', NULL, '2020-11-28'),
+('2020-11-27 12:44:09', '2020-11-27 12:44:09', 2, '102', 'hedaitul islAM', 'storage/files/2020/11/27/1acc68dff959cb76600a9d9eecdccec0.jpg', 'weekly package', 'payment by bkash', 'sdqwr3r34refw', '2020-11-28'),
+('2020-12-11 08:40:07', '2020-12-11 08:40:07', 3, '101', 'badhon kumar sarkar', 'storage/files/2020/12/11/1b0dad3d0b7d894151696e05f20806fc.jpg', 'daily package', 'physical payment', NULL, '2020-11-28');
 
 -- --------------------------------------------------------
 
@@ -1506,11 +1873,22 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `photo`, `cb_roles_id`, `ip_address`, `user_agent`, `login_at`) VALUES
-(1, 'badhon sarkar', 'badhonsarkar518@gmail.com', NULL, '$2y$10$v2QwpkXp4iO4ES/A/GHbSuSb9nh2HMooSTDb6CzmSO0zNbVr5XiYi', NULL, NULL, NULL, 'storage/files/2020/11/10/e0071f3bfa93051b8388f5e51a89c57b.jpg', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36', '2020-11-13 11:10:12');
+(1, 'badhon sarkar', 'badhonsarkar518@gmail.com', NULL, '$2y$10$v2QwpkXp4iO4ES/A/GHbSuSb9nh2HMooSTDb6CzmSO0zNbVr5XiYi', NULL, NULL, NULL, 'storage/files/2020/11/30/89c4c42715e4abadfa7980e7d6a9e7b2.jpeg', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36', '2020-11-13 11:10:12'),
+(2, 'reshawat hossain', 'rst@gmail.com', NULL, '$2y$10$FJSWXiOzpL0K5CTG1tX13OKG.6DEFUOOU3ykc3BXqMxSQaAQdgQL6', NULL, NULL, NULL, NULL, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', '2020-12-10 22:19:33'),
+(3, 'toha', 'user2@gmail.com', NULL, '$2y$10$InM6PVTUJfc3x.d9EekpOu4W6SAadcDAHMqWS/zwBj5q7Cs0RNS/i', NULL, NULL, NULL, NULL, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', '2020-11-27 10:01:10'),
+(4, 'mehedi', 'admin2@gmail.com', NULL, '$2y$10$5z7TTTDFHMvk1RlTLM93aO6r.YRvwagGcUr3ccl2FGNbsPg40ZE8e', NULL, '2020-11-30 12:56:23', NULL, NULL, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36', '2020-12-03 23:35:33'),
+(7, 'habu', 'habu@gmail.com', NULL, '$2y$10$byrgp0G1Xy9r/lbF7zpQjeeKzTeVkdg.7T2HEbDv9AwKkg5q12f2m', NULL, '2020-12-11 08:28:42', NULL, NULL, 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', '2020-12-11 08:29:01'),
+(8, 'abul', 'abul@gmail.com', NULL, '$2y$10$5w1N7XGkoD0boWSXRLLdOO1csvBTvwGPZVzIwSgVvlFu15tGhMuf2', NULL, '2020-12-11 08:33:58', NULL, NULL, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', '2020-12-11 08:42:16');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `baby`
+--
+ALTER TABLE `baby`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `cb_menus`
@@ -1537,6 +1915,18 @@ ALTER TABLE `cb_role_privileges`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `employee`
+--
+ALTER TABLE `employee`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -1549,9 +1939,33 @@ ALTER TABLE `gallery`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `homegallery`
+--
+ALTER TABLE `homegallery`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `message`
+--
+ALTER TABLE `message`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `monitor`
+--
+ALTER TABLE `monitor`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `notice`
+--
+ALTER TABLE `notice`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1559,6 +1973,24 @@ ALTER TABLE `migrations`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
+
+--
+-- Indexes for table `price`
+--
+ALTER TABLE `price`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `registration`
+--
+ALTER TABLE `registration`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `reservation`
+--
+ALTER TABLE `reservation`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -1572,28 +2004,46 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `baby`
+--
+ALTER TABLE `baby`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `cb_menus`
 --
 ALTER TABLE `cb_menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `cb_modules`
 --
 ALTER TABLE `cb_modules`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `cb_roles`
 --
 ALTER TABLE `cb_roles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `cb_role_privileges`
 --
 ALTER TABLE `cb_role_privileges`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+
+--
+-- AUTO_INCREMENT for table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `employee`
+--
+ALTER TABLE `employee`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -1608,16 +2058,58 @@ ALTER TABLE `gallery`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT for table `homegallery`
+--
+ALTER TABLE `homegallery`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `message`
+--
+ALTER TABLE `message`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT for table `monitor`
+--
+ALTER TABLE `monitor`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `notice`
+--
+ALTER TABLE `notice`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `price`
+--
+ALTER TABLE `price`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `registration`
+--
+ALTER TABLE `registration`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `reservation`
+--
+ALTER TABLE `reservation`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- Database: `daycare2`
 --
@@ -11181,7 +11673,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"daycare\",\"table\":\"gallery\"},{\"db\":\"day1\",\"table\":\"cms_menus\"},{\"db\":\"day1\",\"table\":\"cms_menus_privileges\"},{\"db\":\"day1\",\"table\":\"cms_dashboard\"},{\"db\":\"login\\/regi\",\"table\":\"users\"},{\"db\":\"daycare\",\"table\":\"message\"},{\"db\":\"rstfolio\",\"table\":\"gallery\"},{\"db\":\"rstfolio\",\"table\":\"contact\"},{\"db\":\"laravel\",\"table\":\"messages\"},{\"db\":\"rstfolio\",\"table\":\"users\"}]');
+('root', '[{\"db\":\"daycare\",\"table\":\"contacts\"},{\"db\":\"daycare\",\"table\":\"cb_role_privileges\"},{\"db\":\"daycare\",\"table\":\"users\"},{\"db\":\"daycare\",\"table\":\"message\"},{\"db\":\"daycare\",\"table\":\"registration\"},{\"db\":\"daycare\",\"table\":\"notice\"},{\"db\":\"daycare\",\"table\":\"reserve\"},{\"db\":\"daycare\",\"table\":\"cb_menus\"},{\"db\":\"daycare\",\"table\":\"baby\"},{\"db\":\"daycare\",\"table\":\"gallery\"}]');
 
 -- --------------------------------------------------------
 
