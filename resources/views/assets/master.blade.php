@@ -343,12 +343,14 @@
                             <div class="textwidget">
                                 <div role="form" class="cf" id="cf-f1705-o1" lang="en-US" dir="ltr">
                                     <!-- <div class="screen-reader-response"></div> -->
-                                    <form action="" method="post" class="cf-form contact-form" novalidate="novalidate">
-                                        <p><span class="cf-form-control-wrap your-name"><input type="text" name="name" value="" size="60" class="" aria-required="true" aria-invalid="false" placeholder="Name" /></span></p>
-                                        <p><span class="cf-form-control-wrap your-email"><input type="email" name="email" value="" size="60" class="" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></p>
-                                        <p><span class="cf-form-control-wrap your-message"><textarea name="message" cols="39" rows="6" class="" aria-invalid="false" placeholder="Message"></textarea></span></p>
+                                    <form action="submit" method="POST" class="cf-form contact-form" novalidate="novalidate">
+                                        @csrf
+                                        <p><span class="cf-form-control-wrap your-name"><input type="text" name="name"  size="60" class="" aria-required="true" aria-invalid="false" placeholder="Name" /></span></p>
+                                        <p><span class="cf-form-control-wrap your-email"><input type="email" name="email"  size="60" class="" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></p>
+                                        <p><span class="cf-form-control-wrap your-message"><input type="textarea" name="text" cols="60" rows="10" class="" aria-invalid="false" placeholder="Message"></textarea></span></p>
                                         <p>
-                                            <input type="submit" value="Send" class="cf-form-control cf-submit" />
+                                            {{-- <button type="submit"  class="cf-form-control cf-submit">send</button> --}}
+                                            <button type="submit">send</button>
                                         </p>
                                     </form>
                                     <div class="email_server_responce"></div>

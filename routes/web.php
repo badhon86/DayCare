@@ -16,6 +16,7 @@ Route::get('/', [
     'uses' => 'HomeController@index',
     'as'   => '/'
 ]);
+Route::post('submit', 'MasterController@save');
 
 Route::get('/package', [
     'uses' => 'PackageController@index',
