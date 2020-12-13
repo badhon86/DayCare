@@ -347,7 +347,7 @@
                                         @csrf
                                         <p><span class="cf-form-control-wrap your-name"><input type="text" name="name"  size="60" class="" aria-required="true" aria-invalid="false" placeholder="Name" /></span></p>
                                         <p><span class="cf-form-control-wrap your-email"><input type="email" name="email"  size="60" class="" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></p>
-                                        <p><span class="cf-form-control-wrap your-message"><input type="textarea" name="text" cols="60" rows="10" class="" aria-invalid="false" placeholder="Message"></textarea></span></p>
+                                        <p><span class="cf-form-control-wrap your-message"><input type="textarea" name="text" cols="39" rows="6" class="" aria-invalid="false" placeholder="Message"></textarea></span></p>
                                         <p>
                                             {{-- <button type="submit"  class="cf-form-control cf-submit">send</button> --}}
                                             <button type="submit">send</button>
