@@ -211,7 +211,7 @@
                                     <!-- post item -->
                                     <div class='post_item'>
                                         <div class='post_preview clearfix'>
-                                            <a href='#' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/badhon.jpg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei@2x.jpg' alt />
+                                            <a href='#' class='post_thumb_wrapp pic'><img class='post_thumb' src='assets/pic/bfi_thumb/badhon.jpeg' data-at2x='assets/pic/bfi_thumb/58x58-portfolio_7-304vqm0b4ukllinncov4ei@2x.jpg' alt />
                                                 <div class='hover-effect'></div>
                                                 <div class='links'><span class='fa fa-link'></span></div>
                                             </a>

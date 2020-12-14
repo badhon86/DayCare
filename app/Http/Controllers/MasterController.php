@@ -39,7 +39,7 @@ class MasterController extends Controller
         $contacts->name= $req->name;
         $contacts->email=$req->email;
         $contacts->text=$req->text;
-        echo $contacts->save();
+        $contacts->save();
     }
 
     /**
