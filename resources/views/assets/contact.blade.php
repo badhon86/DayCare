@@ -90,6 +90,7 @@
                                     <div class='cws_fa_tbl_cell'></div>
                                     <div class='cws_fa_tbl_cell'>
                                         <p><a href="mailto:badhonsarkar518@gmail.com">badhonsarkar518@gmail.com</a>
+                                            <a href="mailto:badhonsarkar518@gmail.com">hadaitul35-2156@diu.edu.bd</a>
                                             <br />
                                             {{-- <a href="http://www.creaws.com/"> www.creaws.com</a>
                                             <br /> --}}
