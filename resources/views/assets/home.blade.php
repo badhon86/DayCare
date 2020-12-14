@@ -267,7 +267,7 @@
             </div>
             <div class='grid_col grid_col_4'>
                 <div class='ce clearfix'>
-                    <div><img class="noborder alignnone image-type size-full" src="assets/pic/2015/04/kid_playing.jpg" alt="kid_playing" width="385" height="373" /></div>
+                    <div><img class="noborder alignnone image-type size-full" src="#" alt="kid_playing" width="385" height="373" /></div>
                 </div>
             </div>
         </div>
