@@ -4,7 +4,7 @@
 	Template URI: http://themeforest.net/user/CreativeWS/portfolio
 	Description: "Kiddy"
 	Author URI: http://creaws.com
-	
+
 --------------------------------------------------------------------------------
 	-- MAIN COLOR
 	-- MENU COLOR
@@ -13,7 +13,7 @@
 	-- COMMON
 		-- Alignment
 	-- FORM
-	- CONTACT FORM 
+	- CONTACT FORM
 	-- TYPOGRAPHY
 		- HEADINGS
 		- LIST
@@ -29,7 +29,7 @@
 	-- SELECT 2
 	-- SELECT2 ARROW
 	-- CLEARFIX
-	-- HEADER 
+	-- HEADER
 	-- MENU
 	-- DISABLE MOBILE MENU
 	-- MOBILE MENU
@@ -41,7 +41,7 @@
 	-- BLOG
 		-- HOVER EFFECT
 		-- POST FORMATS
-			-- AUDIO 
+			-- AUDIO
 			-- VIDEO
 			-- LINK
 			-- GALLERY
@@ -92,7 +92,7 @@
 	-- FULL SCREEN VIDEO
 	-- SEARCH
 	-- 404 PAGE
-	
+
 */
 
 
@@ -628,8 +628,8 @@ div.woocommerce .shop_table .amount,
 }
 
 
-/* 
-COMMON 
+/*
+COMMON
 */
 
 img,
@@ -814,12 +814,12 @@ aside {
 }
 
 
-/* 
-\COMMON 
+/*
+\COMMON
 */
 
 
-/* 
+/*
 FORM
 */
 
@@ -1109,7 +1109,7 @@ div.cf-validation-errors {
 */
 
 
-/* 
+/*
 TYPOGRAPHY
 */
 
@@ -1461,7 +1461,7 @@ blockquote:after {
 */
 
 
-/* 
+/*
 - TABLE
 */
 
@@ -1529,7 +1529,7 @@ table > tfoot ~ *:last-child tr:last-of-type td {
 }
 
 
-/* 
+/*
 - TABLE
 */
 
@@ -2165,8 +2165,8 @@ CLEARFIX
 */
 
 
-/* 
-HEADER 
+/*
+HEADER
 */
 
 .site_header {
@@ -4825,7 +4825,7 @@ canvas.breadcrumbs {
 */
 
 
-/* 
+/*
 -- POST GRID
 */
 
@@ -4944,7 +4944,7 @@ canvas.separator {
 }
 
 
-/* 
+/*
 -- \POST GRID
 */
 
@@ -5100,7 +5100,7 @@ CAROUSEL
 /* - CWS Portfolio */
 
 .cws-widget > .portfolio_item_thumbs {
-	margin-top: 0px !important; 
+	margin-top: 0px !important;
     background: transparent !important;
     margin-left: -10px;
     margin-top: -10px;
@@ -7021,7 +7021,7 @@ a:hover>.cws_fa_wrapper> .cws_fa:after {
     overflow: hidden;
     font-size: 0.947em
 }
- 
+
 footer .cws_tweet .tweet_content {
 	font-size: 1em;
 }
@@ -7155,7 +7155,7 @@ footer .cws_tweet .tweet_content {
 
 
 /*
-- \RECENT POST 
+- \RECENT POST
 */
 
 

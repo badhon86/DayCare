@@ -43,6 +43,11 @@ Route::get('/gallery', [
     'as'   => '/gallery'
 ]);
 
+Route::get('/webcam', [
+    'uses' => 'WebcamController@index',
+    'as'   => '/webcam'
+]);
+
 Route::get('/about', [
     'uses' => 'AboutController@index',
     'as'   => '/about'

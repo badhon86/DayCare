@@ -150,7 +150,7 @@
                                                 </li>
                                                 <li class="menu-item current-menu-item page_item current_page_item"><a href="http://127.0.0.1:8000/admin/apply_for_register_your_baby/add?ref=8fv1HQ3">login</a></li>
                                                 <li class="menu-item"><a href="http://127.0.0.1:8000/admin/apply_for_register_your_baby/add?ref=8fv1HQ3">register your baby</a></li>
-
+                                                <li class="menu-item"><a href="http://127.0.0.1:8000/admin/webcam/detail/1?ref=xeQNffX">webcam</a></li>
                                             </ul>
                                         </li>
 
